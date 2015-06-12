@@ -1,0 +1,83 @@
+extends layout.jade
+
+block title
+	title K-ongress Seminare
+
+block content
+	div.container
+		a.btn.btn-default(href="/") zurück
+
+		h1 K-ontrol &nbsp;
+			strong Anmeldungen
+
+
+		div.row
+			div.col-sm-6.session-description
+				h2 Basis-Schulung
+				table.table.table-striped
+					thead
+						tr
+							th Name
+							th E-Mail
+							th Schule
+					tbody
+						each guest, index in registrations
+							tr
+								if guest.session=='basis'
+									td #{index+1}
+									td #{guest.name}
+									td #{guest.email}
+									td #{guest.school}
+
+
+
+			div.col-sm-6.session-description
+				h2 Insulinpumpe für Anfänger
+				table.table.table-striped
+					thead
+						tr
+							th
+							th Name
+							th E-Mail
+							th Schule
+					tbody
+					each guest, index in registrations
+						tr
+							if guest.session=='pumpe'
+								td #{index+1}
+								td #{guest.name}
+								td #{guest.email}
+								td #{guest.school}
+
+			div.col-sm-6.session-description
+				h2 Psychoemotionale Aspekte
+				table.table.table-striped
+					thead
+						tr
+							th Name
+							th E-Mail
+							th Schule
+					tbody
+						each guest in registrations
+							tr
+								if guest.session=='psycho'
+									td #{guest.name}
+									td #{guest.email}
+									td #{guest.school}
+
+			div.col-sm-6.session-description
+				h2 Inklusion
+				table.table.table-striped
+					thead
+						tr
+							th Name
+							th E-Mail
+							th Schule
+					tbody
+						each guest in registrations
+							tr
+								if guest.session=='inklusion'
+									td #{guest.name}
+									td #{guest.email}
+									td #{guest.school}
+

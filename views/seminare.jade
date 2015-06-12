@@ -1,0 +1,148 @@
+extends layout.jade
+
+block title
+	title K-ongress Seminare
+
+block content
+	div.container
+		a.btn.btn-primary(href="/") zurück
+
+		h1 Lehrer-Erzieher-Nachmittag &nbsp;
+			strong Seminare
+		br
+		br
+
+		if error=='duplicate entry'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
+
+		else if error=='database error'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Datenbank-Fehler! Ups!
+
+		else if error=='form invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit den eingegebenen Daten stimmt etwas nicht.
+
+
+		else if newname
+			div.alert.alert-dismissible.alert-success
+				button.close(type="button", data-dismiss="alert") x
+				strong Hallo #{newname}!<br>
+				| Danke für deine Anmeldung.&nbsp;
+				| Wir haben dir eine Bestätigung per E-Mail geschickt.
+
+
+		div.row
+			div.col-sm-6.col-md-3.session-description
+				h2 Basis-Schulung
+				img.image(src="/images/seminar1.jpg")
+				p
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") Dr. Kathrin Griffin
+					br
+					i.fa.fa-clock-o.fa-fw
+					| &nbsp;&nbsp;
+					| 17:10 – 19:00
+				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
+
+				h4 Anmeldungen
+
+				if locals.guestCounts.basis
+					p #{guestCounts.basis} von 30 Plätzen belegt
+				else
+					p
+						em Noch keine Anmeldung.
+
+
+
+			div.col-sm-6.col-md-3.session-description
+				h2 Insulinpumpe für Anfänger
+				img.image(src="/images/seminar2.jpg")
+				p
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					| I.Stölzel
+					br
+					i.fa.fa-clock-o.fa-fw
+					| &nbsp;&nbsp;
+					| 17:10 – 19:00
+				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
+				h4 Anmeldungen
+				if locals.guestCounts.pumpe
+					p #{guestCounts.pumpe} von 30 Plätzen belegt
+				else
+					p
+						em Noch keine Anmeldung.
+
+			div.col-sm-6.col-md-3.session-description
+				h2 Psychoemotionale Aspekte
+				img.image(src="/images/seminar3.jpg")
+				p
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") K!
+					br
+					i.fa.fa-clock-o.fa-fw
+					| &nbsp;&nbsp;
+					| 17:10 – 19:00
+				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
+				h4 Anmeldungen
+				if locals.guestCounts.psycho
+					p #{guestCounts.psycho} von 30 Plätzen belegt
+				else
+					p
+						em Noch keine Anmeldung.
+
+
+			div.col-sm-6.col-md-3.session-description
+				h2 Inklusion
+				img.image(src="/images/seminar4.jpg")
+				p
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					| Heinrich, Rock
+					br
+					i.fa.fa-clock-o.fa-fw
+					| &nbsp;&nbsp;
+					| 17:10 – 19:00
+				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
+				h4 Anmeldungen
+				if locals.guestCounts.inklusion
+					p #{guestCounts.inklusion} von 30 Plätzen belegt
+				else
+					p
+						em Noch keine Anmeldung.
+
+
+
+		h2 Anmelden
+
+		form(action="seminare", method="post")
+			div.row
+				div.col-sm-4
+					p
+						input.form-control(name="name", placeholder="Name")
+				div.col-sm-4
+					p
+						input.form-control(name="email", type="email", placeholder="E-Mail Adresse")
+				div.col-sm-4
+					p
+						input.form-control(name="school", placeholder="Schule")
+			div.row
+				div.col-sm-8
+					p
+						select.form-control(name="session")
+							option(value="basis") Basis-Schulung
+							option(value="pumpe") Insulinpumpe für Anfänger
+							option(value="psycho") Psychoemotionale Aspekte
+							option(value="inklusion") Inklusion
+							option(value="keinSeminar", selected="selected") kein Seminar
+				div.col-sm-4
+					p
+						input.form-control.btn.btn-primary(type="submit", value="anmelden")
+		br

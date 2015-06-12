@@ -1,0 +1,31 @@
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.jumbotron {
+	padding-top: 250px;
+	padding-bottom: 50px;
+	background-image: url(/images/Christiaan_Triebert.jpg); /* https://www.flickr.com/photos/christiaantriebert/9024165415 */
+	background-position: center;
+	background-size: cover;
+//	color: white;
+}
+.jumbotron .strip {
+	background-color: white;
+	display: inline-block;
+	padding: 0.1em 0.2em;
+	margin-bottom: 0.1em;
+}
+
+
+.session-description {
+	margin-bottom: 70px;
+}
+.session-description h2 {
+	min-height: 2.3em;
+}
+.session-description img {
+	margin-bottom: 7px;
+}
