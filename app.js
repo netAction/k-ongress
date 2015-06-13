@@ -131,7 +131,7 @@ app.get('/k-ontrol', function (req, res) {
 
 
 // Server
-var server = app.listen(3000, function () {
+var server = app.listen(8004, function () {
 
 	var host = server.address().address;
 	var port = server.address().port;
