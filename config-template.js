@@ -8,7 +8,7 @@ var config = {
 	nodemailerTransporter: {
 	service: 'gmail',
 		auth: {
-			user: 'xxxxxx@netaction.de',
+			user: 'xxxxxx',
 			pass: 'xxxxxx',
 		}
 	}
