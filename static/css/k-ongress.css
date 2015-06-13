@@ -4,6 +4,15 @@
 	height: auto;
 }
 
+p { 
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto; 
+}
+
+
 .jumbotron {
 	padding-top: 250px;
 	padding-bottom: 50px;
@@ -28,4 +37,40 @@
 }
 .session-description img {
 	margin-bottom: 7px;
+}
+
+
+@media(min-width:992px) {
+	.leftline:before {
+		content: ' ';
+		position: absolute;
+		top:0;
+		left:0;
+		display: block;
+		height: 100%;
+		width: 0;
+		border-left: 1px solid #555;
+	}
+}
+
+
+/* Top Navi justified on large screens */
+@media(min-width:768px) {
+	.btn-group4 {
+		width: 100%;
+	}
+	.btn-group4 .btn {
+		width: 25%;
+		border-width: 0;
+		margin: 0;
+	}
+	.btn-group4 .btn + .btn {
+		width: 25%;
+		border-width: 0;
+		margin: 0;
+	}
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+	background-color: #4260BA;
 }

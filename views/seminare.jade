@@ -22,11 +22,20 @@ block content
 				button.close(type="button", data-dismiss="alert") x
 				| Datenbank-Fehler! Ups!
 
-		else if error=='form invalid'
+		else if error=='name invalid'
 			div.alert.alert-dismissible.alert-danger
 				button.close(type="button", data-dismiss="alert") x
-				| Mit den eingegebenen Daten stimmt etwas nicht.
+				| Mit dem eingegebenen Namen stimmt etwas nicht.
 
+		else if error=='email invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit der eingegebenen Mailadresse stimmt etwas nicht.
+
+		else if error=='school invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit der eingegebenen Schule stimmt etwas nicht.
 
 		else if newname
 			div.alert.alert-dismissible.alert-success
@@ -39,7 +48,7 @@ block content
 		div.row
 			div.col-sm-6.col-md-3.session-description
 				h2 Basis-Schulung
-				img.image(src="/images/seminar1.jpg")
+				img.image(src="/images/PA010625x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
@@ -48,12 +57,10 @@ block content
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
-
-				h4 Anmeldungen
-
+				p Einführung Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Broteinheiten, Unter- und Überzuckerungen, Sport, Ausflüge und Klassenfahrten werden hier besprochen.
 				if locals.guestCounts.basis
-					p #{guestCounts.basis} von 30 Plätzen belegt
+					p
+						em #{guestCounts.basis} von 30 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
@@ -62,7 +69,7 @@ block content
 
 			div.col-sm-6.col-md-3.session-description
 				h2 Insulinpumpe für Anfänger
-				img.image(src="/images/seminar2.jpg")
+				img.image(src="/images/PA010643x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
@@ -71,17 +78,17 @@ block content
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
-				h4 Anmeldungen
+				p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe und der allgemeine Umgang mit der Pumpe erklärt.
 				if locals.guestCounts.pumpe
-					p #{guestCounts.pumpe} von 30 Plätzen belegt
+					p
+						em #{guestCounts.pumpe} von 30 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
 
 			div.col-sm-6.col-md-3.session-description
 				h2 Psychoemotionale Aspekte
-				img.image(src="/images/seminar3.jpg")
+				img.image(src="/images/PA010641x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
@@ -90,10 +97,10 @@ block content
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
-				h4 Anmeldungen
+				p Krankheitsbewältigung im Kindesalter mit ausführlicher Diskussion.
 				if locals.guestCounts.psycho
-					p #{guestCounts.psycho} von 30 Plätzen belegt
+					p
+						em #{guestCounts.psycho} von 30 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
@@ -101,7 +108,7 @@ block content
 
 			div.col-sm-6.col-md-3.session-description
 				h2 Inklusion
-				img.image(src="/images/seminar4.jpg")
+				img.image(src="/images/PA010635x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
@@ -111,9 +118,9 @@ block content
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
 				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
-				h4 Anmeldungen
 				if locals.guestCounts.inklusion
-					p #{guestCounts.inklusion} von 30 Plätzen belegt
+					p
+						em #{guestCounts.inklusion} von 30 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
@@ -141,8 +148,10 @@ block content
 							option(value="pumpe") Insulinpumpe für Anfänger
 							option(value="psycho") Psychoemotionale Aspekte
 							option(value="inklusion") Inklusion
-							option(value="keinSeminar", selected="selected") kein Seminar
+							option(value="keinSeminar") kein Seminar
+							option(selected="selected", disabled="disabled", hidden="hidden") Seminar auswählen
 				div.col-sm-4
 					p
 						input.form-control.btn.btn-primary(type="submit", value="anmelden")
+		br
 		br

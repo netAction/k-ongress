@@ -1,3 +1,5 @@
+var config = require('./config.js');
+
 // Express
 var express = require('express');
 var app = express();
@@ -5,24 +7,13 @@ var app = express();
 
 // MySQL
 var mysql      = require('mysql');
-var connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'kongress',
-	password : '5pYMM8uNxhaMAXta',
-	database : 'kongress',
-});
+var connection = mysql.createConnection(config.mysql);
 connection.connect();
 
 
 // E-Mail
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport({
-	service: 'gmail',
-	auth: {
-		user: 'formmail@netaction.de',
-		pass: '#######'
-	}
-});
+var transporter = nodemailer.createTransport(config.nodemailerTransporter);
 
 function sendMail(to, subject, text) {
 	transporter.sendMail({
@@ -91,14 +82,17 @@ app.post('/seminare', function (req, res) {
 	var newName = '';
 
 	// Input invalid?
-	if( !(
-		validateString(registration.name) &&
-		validateEmail(registration.email) &&
-		validateString(registration.school))) {
-
-		error = "form invalid";
+	if(!validateString(registration.name)) {
+		error = "name invalid";
 		sessionsRender(res, error, newName);
-		return;
+	}
+	if(!validateEmail(registration.email)) {
+		error = "email invalid";
+		sessionsRender(res, error, newName);
+	}
+	if(!validateString(registration.school)) {
+		error = "school invalid";
+		sessionsRender(res, error, newName);
 	}
 
 
@@ -108,7 +102,14 @@ app.post('/seminare', function (req, res) {
 			if (err.errno == 1062) error='duplicate entry';
 		} else {
 			var newName = req.body.name.trim();
-			sendMail(registration.email, 'Du bist beim Lehrer-Erzieher-Nachmittag dabei!', 'Komm, '+newName);
+			sendMail(
+				registration.email,
+				'Du bist beim Lehrerinnen-Erzieherinnen-Nachmittag dabei!',
+				'Hallo '+newName+'!\n\n'+
+				'Willkommen beim Lehrerinnen-Erzieherinnen-Nachmittag, wir freuen uns, dich am 13. Oktober 2015 zu sehen.\n'+
+				(registration.session=='pumpe'?'Für dich ist ein Platz beim Pumpen-Seminar reserviert.':'nix')+
+				'\n\nBei Änderungen und Rückfragen erreichst du uns unter Telefon oder per Antwort auf diese Mail.'+
+				'\n\nDein Team des Sozialpädiatrischen Zentrum');
 		}
 
 		sessionsRender(res, error, newName);
@@ -123,7 +124,6 @@ app.post('/seminare', function (req, res) {
 app.get('/k-ontrol', function (req, res) {
 	connection.query('SELECT * FROM registrations', function(err, results) {
 		if (err) throw err;
-		console.log(results);
 		res.render('k-ontrol', { registrations: results });
 	});
 });
