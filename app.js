@@ -85,16 +85,13 @@ app.post('/seminare', function (req, res) {
 	if(!validateString(registration.name)) {
 		error = "name invalid";
 		sessionsRender(res, error, newName);
+		return;
 	}
 	if(!validateEmail(registration.email)) {
 		error = "email invalid";
 		sessionsRender(res, error, newName);
+		return;
 	}
-	if(!validateString(registration.school)) {
-		error = "school invalid";
-		sessionsRender(res, error, newName);
-	}
-
 
 	connection.query('INSERT INTO registrations SET ?', [registration], function(err, results) {
 		if (err) {
@@ -107,7 +104,10 @@ app.post('/seminare', function (req, res) {
 				'Du bist beim Lehrerinnen-Erzieherinnen-Nachmittag dabei!',
 				'Hallo '+newName+'!\n\n'+
 				'Willkommen beim Lehrerinnen-Erzieherinnen-Nachmittag, wir freuen uns, dich am 13. Oktober 2015 zu sehen.\n'+
-				(registration.session=='pumpe'?'Für dich ist ein Platz beim Pumpen-Seminar reserviert.':'nix')+
+				(registration.session=='basis'?'Für dich ist ein Platz bei der Basis-Schulung reserviert.':'')+
+				(registration.session=='pumpe'?'Für dich ist ein Platz beim Seminar „Insulinpumpe für Anfänger“ reserviert.':'')+
+				(registration.session=='psycho'?'Für dich ist ein Platz beim Seminar „Psychoemotionale Aspekte“ reserviert.':'')+
+				(registration.session=='inklusion'?'Für dich ist ein Platz beim Inklusions-Seminar reserviert.':'')+
 				'\n\nBei Änderungen und Rückfragen erreichst du uns unter Telefon oder per Antwort auf diese Mail.'+
 				'\n\nDein Team des Sozialpädiatrischen Zentrum');
 		}
