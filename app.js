@@ -7,8 +7,8 @@ var app = express();
 
 // MySQL
 var mysql      = require('mysql');
-var connection = mysql.createConnection(config.mysql);
-connection.connect();
+var mysqlPool = mysql.createPool(config.mysql);
+
 
 
 // E-Mail
@@ -55,7 +55,7 @@ app.get('/', function (req, res) {
 
 
 function sessionsRender(res, error, newname) {
-	connection.query('SELECT session, COUNT (*) AS guests FROM registrations GROUP by session', function(err, results) {
+	mysqlPool.query('SELECT session, COUNT (*) AS guests FROM registrations GROUP by session', function(err, results) {
 		if (err) throw err;
 		guestCounts = {};
 		results.forEach(function(session) {
@@ -93,7 +93,7 @@ app.post('/seminare', function (req, res) {
 		return;
 	}
 
-	connection.query('INSERT INTO registrations SET ?', [registration], function(err, results) {
+	mysqlPool.query('INSERT INTO registrations SET ?', [registration], function(err, results) {
 		if (err) {
 			var error = 'database error';
 			if (err.errno == 1062) error='duplicate entry';
@@ -122,7 +122,7 @@ app.post('/seminare', function (req, res) {
 
 
 app.get('/k-ontrol', function (req, res) {
-	connection.query('SELECT * FROM registrations', function(err, results) {
+	mysqlPool.query('SELECT * FROM registrations', function(err, results) {
 		if (err) throw err;
 		res.render('k-ontrol', { registrations: results });
 	});
@@ -143,7 +143,3 @@ var server = app.listen(8004, function () {
 
 
 
-
-
-// MySQL
-//connection.end();

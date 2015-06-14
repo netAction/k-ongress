@@ -1,5 +1,6 @@
 var config = {
 	mysql: {
+		connectionLimit : 10,
 		host     : 'localhost',
 		user     : 'kongress',
 		password : '5pYMM8uNxhaMAXta',
