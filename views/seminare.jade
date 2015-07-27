@@ -1,7 +1,7 @@
 extends layout.jade
 
 block title
-	title K-ongress Seminare
+	title Diabetes-Schule Berlin | Seminare
 
 block content
 	div.container
@@ -46,7 +46,7 @@ block content
 
 
 		div.row
-			div.col-sm-6.col-md-3.session-description
+			div.col-sm-6.col-lg-3.session-description
 				h2 Basis-Schulung
 				img.image(src="/images/kongress-2015-07-19-P7190768.jpg")
 				p
@@ -57,47 +57,59 @@ block content
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Einführung Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Broteinheiten, Unter- und Überzuckerungen, Sport, Ausflüge und Klassenfahrten werden hier besprochen.
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Hörsaal 6 · Mittelallee 10
+				p Einführung in das Thema Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Broteinheiten, Unter- und Überzuckerungen, Sport, Ausflüge und Klassenfahrten werden hier besprochen.
 				if locals.guestCounts.basis
 					p
-						em #{guestCounts.basis} von 30 Plätzen belegt
+						em #{guestCounts.basis} von 200 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
 
 
 
-			div.col-sm-6.col-md-3.session-description
+			div.col-sm-6.col-lg-3.session-description
 				h2 Insulinpumpe für Anfänger
 				img.image(src="/images/kongress-2015-07-19-P7190765.jpg")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
-					| I.Stölzel
+					| Karina Boss
 					br
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe und der allgemeine Umgang mit der Pumpe erklärt.
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Kursraum 6 · Mittelallee 10
+				p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen.
 				if locals.guestCounts.pumpe
 					p
-						em #{guestCounts.pumpe} von 30 Plätzen belegt
+						em #{guestCounts.pumpe} von 50 Plätzen belegt
 				else
 					p
 						em Noch keine Anmeldung.
 
-			div.col-sm-6.col-md-3.session-description
+			div.col-sm-6.col-lg-3.session-description
 				h2 Psychoemotionale Aspekte
 				img.image(src="/images/PA010625x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
-					a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") K!
+					| Lilian Farias
 					br
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Krankheitsbewältigung im Kindesalter mit ausführlicher Diskussion.
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Seminarraum 2 · Mittelallee 8
+				p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
 				if locals.guestCounts.psycho
 					p
 						em #{guestCounts.psycho} von 30 Plätzen belegt
@@ -106,18 +118,22 @@ block content
 						em Noch keine Anmeldung.
 
 
-			div.col-sm-6.col-md-3.session-description
-				h2 Inklusion
+			div.col-sm-6.col-lg-3.session-description
+				h2 Netzwerkgründung Inklusive Schule
 				img.image(src="/images/PA010641x.JPG")
 				p
 					i.fa.fa-user.fa-fw
 					| &nbsp;&nbsp;
-					| Heinrich, Rock
+					| Michaela Heinrich
 					br
 					i.fa.fa-clock-o.fa-fw
 					| &nbsp;&nbsp;
 					| 17:10 – 19:00
-				p Beschreibung bla bla lorem ipsum hier steht der Text und noch viel mehr über dieses super Seminar.
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Seminarraum 1 · Mittelallee 8
+				p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind: die Entwicklung von Strategien, betroffene Eltern zu unterstützen, ihren Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen. Des Weiteren die Identifizierung und Offenlegung von Problemen struktureller Natur, Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken sowie gemeinsame Fortbildungen.
 				if locals.guestCounts.inklusion
 					p
 						em #{guestCounts.inklusion} von 30 Plätzen belegt

@@ -1,25 +1,21 @@
 extends layout.jade
 
 block title
-	title K-ongress Seminare
+	title Diabetes-Schule Berlin
 
 block content
 	div.container
-		h1 Diabetes Ambulanz | Virchow Klinikum der Charité Berlin
+		h1 Kinder mit Diabetes in der Schule
 		br
-
-		div.btn-group.btn-group4
-			a.btn.btn-default(href="kinder-uebernachtung") Kinder-Übernachtung
-			a.btn.btn-default(href="eltern-schulung") Eltern-Schulung
-			a.btn.btn-default(href="schulbesuch") Schulbesuch
-			a.btn.btn-primary(href="/") Lehrer-Nachmittag
 
 
 		div.jumbotron
 			h1
 				span.strip Lehrerinnen-Erzieher-Nachmittag
 			p
-				span.strip Am 13. Oktober 2015
+				span.strip 8. Oktober 2015
+				| &nbsp;&nbsp;
+				span.strip Berlin
 			a.btn.btn-primary.btn-lg(href="/seminare") Seminare
 
 
@@ -51,19 +47,37 @@ block content
 							td
 								strong Begrüßung
 								br
-								|  von Oberarzt PD Dr. Klemens Raile, Leiter des Diabeteszentrums für Kinder und Jugendliche
+								| PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
+								br
+								| Hörsaal 6 · Mittelallee 10
 						tr
 							td 14:15
 							td
 								strong Einführung
 								br
-								|  Kinder mit Diabetes in der Schule von Dr. Kathrin Griffig, Kinderdiabetologin
+								i.fa.fa-user.fa-fw
+								| &nbsp;&nbsp;
+								| Dr. Kathrin Griffig · Kinderdiabetologin
+								br
+								i.fa.fa-map-marker.fa-fw
+								| &nbsp;&nbsp;
+								| Hörsaal 6 · Mittelallee 10
+								br
+								|  Einführung: Kinder mit Diabetes in der Schule
 						tr
 							td 14:45
 							td
-								strong schulunterstützende Maßnahmen
+								strong Schulunterstützende Maßnahmen
 								br
-								|  von Michaela Heinrich, Sozialarbeiterin des Sozialpädiatrischen Zentrums
+								i.fa.fa-user.fa-fw
+								| &nbsp;&nbsp;
+								| Michaela Heinrich · Sozialarbeiterin des Sozialpädiatrischen Zentrums
+								br
+								i.fa.fa-map-marker.fa-fw
+								| &nbsp;&nbsp;
+								| Hörsaal 6 · Mittelallee 10
+								br
+								| Sozialrechtliches
 						tr
 							td 15:45&nbsp;–&nbsp;16:15
 							td
@@ -73,7 +87,8 @@ block content
 							td
 								strong Rechtliche Aspekte
 								br
-								|  erklärt vom Anwalt
+								|  erklärt von 
+								a(href="http://www.diabetes-und-recht.de/oliver-ebert/") Rechtsanwalt Oliver Ebert
 						tr
 							td 17:10&nbsp;–&nbsp;19:00
 							td
