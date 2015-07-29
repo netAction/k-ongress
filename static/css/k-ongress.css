@@ -13,15 +13,18 @@ p {
 }
 
 
-.jumbotron {
+h2 {
+	margin-top: 40px;
+}
+
+.frontpage-jumbotron {
 	padding-top: 250px;
 	padding-bottom: 50px;
 	background-image: url(/images/Christiaan_Triebert.jpg); /* https://www.flickr.com/photos/christiaantriebert/9024165415 */
 	background-position: center;
 	background-size: cover;
-//	color: white;
 }
-.jumbotron .strip {
+.frontpage-jumbotron .strip {
 	background-color: white;
 	display: inline-block;
 	padding: 0.1em 0.2em;
@@ -29,6 +32,9 @@ p {
 }
 
 
+
+
+/* #### Sessions #### */
 .session-description {
 	margin-bottom: 70px;
 }
@@ -37,40 +43,4 @@ p {
 }
 .session-description img {
 	margin-bottom: 7px;
-}
-
-
-@media(min-width:992px) {
-	.leftline:before {
-		content: ' ';
-		position: absolute;
-		top:0;
-		left:0;
-		display: block;
-		height: 100%;
-		width: 0;
-		border-left: 1px solid #555;
-	}
-}
-
-
-/* Top Navi justified on large screens */
-@media(min-width:768px) {
-	.btn-group4 {
-		width: 100%;
-	}
-	.btn-group4 .btn {
-		width: 25%;
-		border-width: 0;
-		margin: 0;
-	}
-	.btn-group4 .btn + .btn {
-		width: 25%;
-		border-width: 0;
-		margin: 0;
-	}
-}
-
-.btn-default:hover, .btn-default:active, .btn-default:focus {
-	background-color: #4260BA;
 }
