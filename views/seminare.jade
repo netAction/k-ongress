@@ -46,110 +46,145 @@ block content
 
 
 		div.row
-			div.col-sm-6.col-lg-3.session-description
-				h2 Basis-Schulung
-				img.image(src="/images/kongress-2015-07-19-P7190768.jpg")
-				p
-					i.fa.fa-user.fa-fw
-					| &nbsp;&nbsp;
-					a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") Dr. Kathrin Griffig
-					br
-					i.fa.fa-clock-o.fa-fw
-					| &nbsp;&nbsp;
-					| 17:10 – 19:00
-					br
-					i.fa.fa-map-marker.fa-fw
-					| &nbsp;&nbsp;
-					| Hörsaal 6 · Mittelallee 10
-				p Einführung in das Thema Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Kohlenhydrate erkennen und Broteinheiten berechnen, Unter- und Überzuckerungen erkennen und behandeln, Therapieempfehlungen bei Sport und Schwimmen, Verhalten  bei Ausflügen und Klassenfahrten werden hier besprochen.
-				if locals.guestCounts.basis
-					p
-						em #{guestCounts.basis} von 200 Plätzen belegt
-				else
-					p
-						em Noch keine Anmeldung.
+			div.col-sm-6.session-description
+				div.panel.panel-default
+					div.panel-body
+
+						h2 Basis-Schulung
+						img.image(src="/images/kongress-2015-07-19-P7190768.jpg")
+
+						div.row
+							div.col-md-6
+								p Einführung in das Thema Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Kohlenhydrate erkennen und Broteinheiten berechnen, Unter- und Überzuckerungen erkennen und behandeln, Therapieempfehlungen bei Sport und Schwimmen, Verhalten  bei Ausflügen und Klassenfahrten werden hier besprochen.
+							div.col-md-6
+								p
+									i.fa.fa-user.fa-fw
+									| &nbsp;&nbsp;
+									a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") Dr. Kathrin Griffig
+									br
+									i.fa.fa-clock-o.fa-fw
+									| &nbsp;&nbsp;
+									| 17:10 – 19:00
+									br
+									i.fa.fa-map-marker.fa-fw
+									| &nbsp;&nbsp;
+									| Hörsaal 6 · Mittelallee 10
+								if locals.guestCounts.basis
+									p
+										em #{guestCounts.basis} von 200 Plätzen belegt
+								else
+									p
+										em Noch keine Anmeldung.
 
 
 
-			div.col-sm-6.col-lg-3.session-description
-				h2 Insulinpumpentechnik
-				img.image(src="/images/kongress-2015-07-19-P7190765.jpg")
-				p
-					i.fa.fa-user.fa-fw
-					| &nbsp;&nbsp;
-					| Karina Boss
-					br
-					i.fa.fa-clock-o.fa-fw
-					| &nbsp;&nbsp;
-					| 17:10 – 19:00
-					br
-					i.fa.fa-map-marker.fa-fw
-					| &nbsp;&nbsp;
-					| Kursraum 6 · Mittelallee 10
-				p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen. In diesen Kleingruppen wird mit folgenden Insulinpumpen geübt: 
-					em Roche Accu check Combo 
-					| und 
-					em Insight
-					| , 
-					em Paradigm Medtronic Veo 
-					| sowie 
-					em 604G 
-					| und 
-					em Ypsomed Omnipod
-					|.
-				if locals.guestCounts.pumpe
-					p
-						em #{guestCounts.pumpe} von 50 Plätzen belegt
-				else
-					p
-						em Noch keine Anmeldung.
+				div.panel.panel-default
+					div.panel-body
+						h2 Insulinpumpentechnik
+						img.image(src="/images/kongress-2015-07-19-P7190765.jpg")
+						div.row
+							div.col-md-6
+								p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen. In diesen Kleingruppen wird mit folgenden Insulinpumpen geübt: 
+									em Roche Accu check Combo 
+									| und 
+									em Insight
+									| , 
+									em Paradigm Medtronic Veo 
+									| sowie 
+									em 604G 
+									| und 
+									em Ypsomed Omnipod
+									|.
+							div.col-md-6
+								p
+									i.fa.fa-user.fa-fw
+									| &nbsp;&nbsp;
+									| Karina Boss
+									br
+									i.fa.fa-clock-o.fa-fw
+									| &nbsp;&nbsp;
+									| 17:10 – 19:00
+									br
+									i.fa.fa-map-marker.fa-fw
+									| &nbsp;&nbsp;
+									| Kursraum 6 · Mittelallee 10
 
-			div.col-sm-6.col-lg-3.session-description
-				h2 Psychoemotionale Aspekte
-				img.image(src="/images/kongress-2014-10-01-PA010625.jpg")
-				p
-					i.fa.fa-user.fa-fw
-					| &nbsp;&nbsp;
-					| Lilian Farias
-					br
-					i.fa.fa-clock-o.fa-fw
-					| &nbsp;&nbsp;
-					| 17:10 – 19:00
-					br
-					i.fa.fa-map-marker.fa-fw
-					| &nbsp;&nbsp;
-					| Seminarraum 2 · Mittelallee 8
-				p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
-				if locals.guestCounts.psycho
-					p
-						em #{guestCounts.psycho} von 30 Plätzen belegt
-				else
-					p
-						em Noch keine Anmeldung.
+								if locals.guestCounts.pumpe
+									p
+										em #{guestCounts.pumpe} von 50 Plätzen belegt
+								else
+									p
+										em Noch keine Anmeldung.
 
 
-			div.col-sm-6.col-lg-3.session-description
-				h2 Netzwerkgründung Inklusive Schule
-				img.image(src="/images/kongress-2014-10-01-PA010641.jpg")
-				p
-					i.fa.fa-user.fa-fw
-					| &nbsp;&nbsp;
-					| Michaela Heinrich
-					br
-					i.fa.fa-clock-o.fa-fw
-					| &nbsp;&nbsp;
-					| 17:10 – 19:00
-					br
-					i.fa.fa-map-marker.fa-fw
-					| &nbsp;&nbsp;
-					| Seminarraum 1 · Mittelallee 8
-				p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind: die Entwicklung von Strategien, betroffene Eltern zu unterstützen, ihren Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen. Des Weiteren die Identifizierung und Offenlegung von Problemen struktureller Natur, Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken sowie gemeinsame Fortbildungen.
-				if locals.guestCounts.inklusion
-					p
-						em #{guestCounts.inklusion} von 30 Plätzen belegt
-				else
-					p
-						em Noch keine Anmeldung.
+
+			div.col-sm-6.session-description
+
+				div.panel.panel-default
+					div.panel-body
+
+						h2 Psychoemotionale Aspekte
+						img.image(src="/images/kongress-2014-10-01-PA010625.jpg")
+						div.row
+							div.col-md-6
+								p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
+							div.col-md-6
+								p
+									i.fa.fa-user.fa-fw
+									| &nbsp;&nbsp;
+									| Lilian Farias
+									br
+									i.fa.fa-clock-o.fa-fw
+									| &nbsp;&nbsp;
+									| 17:10 – 19:00
+									br
+									i.fa.fa-map-marker.fa-fw
+									| &nbsp;&nbsp;
+									| Seminarraum 2 · Mittelallee 8
+									p
+									if locals.guestCounts.psycho
+										em #{guestCounts.psycho} von 30 Plätzen belegt
+									else
+										p
+											em Noch keine Anmeldung.
+
+
+
+
+				div.panel.panel-default
+					div.panel-body
+
+						h2 Netzwerkgründung Inklusive Schule
+						img.image(src="/images/kongress-2014-10-01-PA010641.jpg")
+						div.row
+							div.col-md-6
+								p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind: die Entwicklung von Strategien, betroffene Eltern zu unterstützen, ihren Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen. Des Weiteren die Identifizierung und Offenlegung von Problemen struktureller Natur, Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken sowie gemeinsame Fortbildungen.
+
+							div.col-md-6
+								p
+									i.fa.fa-user.fa-fw
+									| &nbsp;&nbsp;
+									| Michaela Heinrich
+									br
+									i.fa.fa-clock-o.fa-fw
+									| &nbsp;&nbsp;
+									| 17:10 – 19:00
+									br
+									i.fa.fa-map-marker.fa-fw
+									| &nbsp;&nbsp;
+									| Seminarraum 1 · Mittelallee 8
+								if locals.guestCounts.inklusion
+									p
+										em #{guestCounts.inklusion} von 30 Plätzen belegt
+								else
+									p
+										em Noch keine Anmeldung.
+
+
+
+
+
+
 
 
 

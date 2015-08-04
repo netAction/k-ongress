@@ -21,12 +21,16 @@ p {
 	background-size: cover;
 }
 .frontpage-jumbotron .strip {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.8);
 	display: inline-block;
 	padding: 0.1em 0.2em;
 	margin-bottom: 0.1em;
 }
-
+.frontpage-jumbotron h1 {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0.1em 0.2em;
+	margin-bottom: 0.4em;
+}
 
 
 
@@ -39,4 +43,32 @@ p {
 }
 .session-description img {
 	margin-bottom: 7px;
+}
+
+
+.karte {
+	padding: 30px;
+	background-image: url(../images/karte.png);
+	background-position: 50% 50%;
+}
+.karte h2, .karte p {
+	background-color: white;
+	padding: 10px;
+}
+
+
+footer {
+	margin-top: 30px;
+	background-color: #333;
+	color: #eee;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+footer a{
+	color: white;
+	text-decoration: underline;
+}
+footer a:hover, footer a:focus, footer a:active {
+	color: white;
+	background-color: #666;
 }

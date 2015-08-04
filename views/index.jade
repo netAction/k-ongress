@@ -10,24 +10,71 @@ block content
 
 
 		div.jumbotron.frontpage-jumbotron
-			h1
-				span.strip Lehrerinnen-Erzieher-Nachmittag
+			h1.text-center Lehrerinnen-Erzieher-Nachmittag
 			p
+				span.pull-right.strip.timer.hidden-xs
 				span.strip 8. Oktober 2015
 				| &nbsp;&nbsp;
 				span.strip Berlin
-			a.btn.btn-primary.btn-lg(href="/seminare") Seminare
 
 
 		div.row
-			div.col-md-10.col-md-offset-1
+			div.col-md-8.col-md-offset-1
 
+				p.lead Ein Nachmittag für Gespräche über Diabetes im Schulalltag, den Umgang mit Insulinpumpen und Snacks. 
+					| Die Konferenz ist am 
+					strong 8. Oktober 2015 
+					| im 
+					strong Campus Virchow der Charité Berlin
+					| .
+			div.col-md-2
+				a.btn.btn-primary.btn-lg(href="/seminare") Seminare
+
+
+			div.col-sm-12
+				h2 Speaker
+
+			div.col-sm-3
+				div.panel.panel-default
+					div.panel-body
+						img(src="/images/portrait-k.jpg").image
+						p.lead Karina Boss
+						p Diabetesberaterin
+
+			div.col-sm-3
+				div.panel.panel-default
+					div.panel-body
+						img(src="/images/portrait-k.jpg").image
+						p.lead Karina Boss
+						p Diabetesberaterin
+
+			div.col-sm-3
+				div.panel.panel-default
+					div.panel-body
+						img(src="/images/portrait-k.jpg").image
+						p.lead Karina Boss
+						p Diabetesberaterin
+
+			div.col-sm-3
+				div.panel.panel-default
+					div.panel-body
+						img(src="/images/portrait-k.jpg").image
+						p.lead Karina Boss
+						p Diabetesberaterin
+
+
+
+
+
+			div.col-md-5.col-md-offset-1
 				p Seit fünf Jahren bietet das 
 					strong Diabeteszentrum der Charité Campus Virchow 
 					| jedes Jahr im Herbst einen
 					strong Informationsnachmittag für Lehrer, Erzieher und Schulhelfer 
 					| zum Thema: Kinder mit Diabetes in der Schule an. Die wachsende Teilnehmerzahl, zuletzt rund 200 Lehrer, Erzieher und Schulhelfer, belegt den bestehenden Bedarf.
 				p In diesem Jahr wird die Veranstaltung in Kooperation des Diabeteszentrums für Kinder und Jugendliche der Charité Campus Virchow mit Diabetes DE der Dachorganisation, die Menschen mit Diabetes und Ärzte sowie Berater vereint, durchgeführt.
+
+			div.col-md-5
 				p Neben einer allgemeinen Einführung zu Kindern mit Diabetes in der Schule werden 
 					strong sozialrechtliche Aspekte wie die Beantragung von Schulhelfern, Integrationsstatus und die Verordnung von Pflegediensten 
 					| besprochen. Gefolgt von rechtlichen Aspekten wie 
@@ -39,6 +86,7 @@ block content
 					| können Sie ihr Wissen in einem Gebiet vertiefen. Bitte melden Sie sich nur für ein Seminar an, die Seminare finden parallel statt. Wenn sie die Grundlagen erlernen möchten, empfehlen wir Ihnen unbedingt die Basis-Schulung.  
 
 
+			div.col-md-8
 				h2 Zeitplan
 
 				table.table.table-striped
@@ -81,8 +129,6 @@ block content
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
-								br
-								| Sozialrechtliches
 						tr
 							td 15:45&nbsp;–&nbsp;16:15
 							td
@@ -107,16 +153,9 @@ block content
 								strong Aufteilung in Seminare
 
 
-				div.jumbotron
-					h2 Anmeldung
-					p
-						| Um Anmeldung wird gebeten auf der 
-						a(href="/seminare") Übersicht der Seminare
-						|.
 
 
-
-			div.col-md-10.col-md-offset-1
+			div.col-md-3.col-md-offset-1
 				H2 Material
 				p
 					a(href="/material") Leitfaden
@@ -125,10 +164,25 @@ block content
 					a(href="http://www.diabetes-kinder.de/") diabetes-kinder.de
 
 
-			div.col-md-10.col-md-offset-1
+
+
+			div.col-md-12
 				div.jumbotron
+
+					i.fa.fa-pencil-square-o.fa-5x.pull-left
+
+					h2 Anmeldung
+					p
+						| Um Anmeldung wird gebeten auf der 
+						a(href="/seminare") Übersicht der Seminare
+						|.
+
+
+
+			div.col-md-12
+				div.karte
 					div.row
-						div.col-sm-6
+						div.col-sm-5.col-md-4
 							h2 Kontakt
 							p Charité Campus Virchow
 								br
@@ -143,7 +197,7 @@ block content
 								| Tel. 030/450566357
 								br
 								| Karina.Boss@charite.de
-						div.col-sm-6
+						div.col-sm-4.col-sm-offset-3.col-md-3.col-md-offset-5
 							h2 Anfahrt
 							p Campus Virchow Klinikum 
 								br
@@ -160,11 +214,4 @@ block content
 								br
 								i.fa.fa-bus.fa-fw
 								|  50, M13, 106
-
-
-			div.col-md-10.col-md-offset-1
-				h2 Lizenz
-				p Der gesamte Inhalt dieser Seiten darf gerne kopiert werden unter den Bedingungen der 
-					a(href="https://creativecommons.org/licenses/by-sa/3.0/de/") CreativeCommons CC-BY-SA
-					|.
 
