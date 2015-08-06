@@ -19,30 +19,29 @@ block content
 
 
 		div.row
-			div.col-md-8.col-md-offset-1
-
+			div.col-md-8.col-md-offset-2
 				p.lead Ein Nachmittag für Gespräche über Diabetes im Schulalltag, den Umgang mit Insulinpumpen und Snacks. 
 					| Die Konferenz ist am 
 					strong 8. Oktober 2015 
 					| im 
 					strong Campus Virchow der Charité Berlin
 					| .
-			div.col-md-2
-				a.btn.btn-primary.btn-lg(href="/seminare") Seminare
+				a.btn.btn-primary.btn-lg.pull-right(href="#anmeldung") Anmeldung
+				div.clearfix
 
 
 			div.col-sm-12
-				h2 Speaker
+				h2 Moderation
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
 						img(src="/images/portrait-k.jpg").image
 						p.lead Karina Boss
 						p Diabetesberaterin
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
 						img(src="/images/portrait-michaela-heinrich.jpg").image
 						p.lead Michaela Heinrich
@@ -51,7 +50,7 @@ block content
 			div.clearfix.hidden-sm.hidden-md.hidden-lg
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
 						img(src="/images/portrait-klemens-raille.jpg").image
 						p.lead PD Dr. med. Klemens Raile
@@ -60,179 +59,394 @@ block content
 			div.clearfix.hidden-xs
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
-						img(src="/images/portrait-k.jpg").image
-						p.lead Karina Boss
-						p Diabetesberaterin
+						img(src="/images/portrait-lilian-farias.jpg").image
+						p.lead Lilian Farias
+						p Psychologin
 
 			div.clearfix.hidden-sm.hidden-md.hidden-lg
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
-						img(src="/images/portrait-k.jpg").image
-						p.lead Karina Boss
-						p Diabetesberaterin
+						img(src="/images/portrait-kathrin-griffig.jpg").image
+						p.lead Dr. Kathrin Griffig
+						p Kinderdiabetologin
 
 			div.col-xs-6.col-sm-4
-				div.panel.panel-default
+				div.panel.panel-speaker
 					div.panel-body
-						img(src="/images/portrait-k.jpg").image
-						p.lead Karina Boss
-						p Diabetesberaterin
+						img(src="/images/portrait-oliver-ebert.jpg").image
+						p.lead Oliver Ebert
+						p Rechtsanwalt
 
 
 
 
+		h2 Zeitplan
 
-			div.col-md-8
-				h2 Zeitplan
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 14:00
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 Begrüßung 
+				div.timetable-description
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Hörsaal 6 · Mittelallee 10
 
-				table.table.table-striped
-					tbody
-						tr
-							td 14:00
-							td
-								strong Begrüßung
-								br
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 14:15
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 Einführung 
+				div.timetable-description
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					| Dr. Kathrin Griffig · Kinderdiabetologin
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Hörsaal 6 · Mittelallee 10
+					br
+					|  Einführung: Kinder mit Diabetes in der Schule
+
+
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 14:45
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 Schulunterstützende Maßnahmen 
+				div.timetable-description
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					| Michaela Heinrich · Sozialarbeiterin des Sozialpädiatrischen Zentrums
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Hörsaal 6 · Mittelallee 10
+
+
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 15:45&nbsp;–&nbsp;16:15
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 PAUSE 
+				div.timetable-description
+					p Imbiss im Foyer Untergeschoss
+
+
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 16:15
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 Rechtliche Aspekte 
+				div.timetable-description
+					i.fa.fa-user.fa-fw
+					| &nbsp;&nbsp;
+					a(href="http://www.diabetes-und-recht.de/oliver-ebert/") Rechtsanwalt Oliver Ebert
+					br
+					i.fa.fa-map-marker.fa-fw
+					| &nbsp;&nbsp;
+					| Hörsaal 6 · Mittelallee 10
+
+
+		div.row.timetable
+			div.line1
+			div.line2
+			div.col-sm-2.col-md-2.timetable-time
+				p 17:10&nbsp;–&nbsp;19:00
+			div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
+				h4 Aufteilung in Seminare 
+				div.timetable-description
+					p Text bla bla
+		a.btn.btn-default.pull-right(href="#")
+			i.fa.fa-file-pdf-o
+			| &nbsp;&nbsp;Zeitplan als PDF
+		div.clearfix
+
+
+
+	div.seminare-wrapper#seminare
+		div.container
+			h2 Seminare
+			br
+			br
+
+			if error=='duplicate entry'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
+
+			else if error=='database error'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Datenbank-Fehler! Ups!
+
+			else if error=='name invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit dem eingegebenen Namen stimmt etwas nicht.
+
+			else if error=='email invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit der eingegebenen Mailadresse stimmt etwas nicht.
+
+			else if error=='school invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit der eingegebenen Schule stimmt etwas nicht.
+
+			else if newname
+				div.alert.alert-dismissible.alert-success
+					button.close(type="button", data-dismiss="alert") x
+					strong Hallo #{newname}!<br>
+					| Danke für deine Anmeldung.&nbsp;
+					| Wir haben dir eine Bestätigung per E-Mail geschickt.
+
+
+			div.row
+				div.col-sm-6.col-lg-3.session-description
+					div.panel.panel-default
+						div.panel-body
+							img.image(src="/images/kongress-2015-07-19-P7190768.jpg")
+							h3 Basis-Schulung
+
+							p Einführung in das Thema Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Kohlenhydrate erkennen und Broteinheiten berechnen, Unter- und Überzuckerungen erkennen und behandeln, Therapieempfehlungen bei Sport und Schwimmen, Verhalten  bei Ausflügen und Klassenfahrten werden hier besprochen.
+							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
+								a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") Dr. Kathrin Griffig
+								br
+								i.fa.fa-clock-o.fa-fw
+								| &nbsp;&nbsp;
+								| 17:10 – 19:00
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
-						tr
-							td 14:15
-							td
-								strong Einführung
-								br
+							if locals.guestCounts.basis
+								p
+									em #{guestCounts.basis} von 200 Plätzen belegt
+							else
+								p
+									em Noch keine Anmeldung.
+
+
+				div.col-sm-6.col-lg-3.session-description
+					div.panel.panel-default
+						div.panel-body
+							img.image(src="/images/kongress-2015-07-19-P7190765.jpg")
+							h3 Insulinpumpentechnik
+
+							p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen. In diesen Kleingruppen wird mit folgenden Insulinpumpen geübt: 
+								em Roche Accu check Combo 
+								| und 
+								em Insight
+								| , 
+								em Paradigm Medtronic Veo 
+								| sowie 
+								em 604G 
+								| und 
+								em Ypsomed Omnipod
+								|.
+							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| Dr. Kathrin Griffig · Kinderdiabetologin
+								| Karina Boss
+								br
+								i.fa.fa-clock-o.fa-fw
+								| &nbsp;&nbsp;
+								| 17:10 – 19:00
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
-								| Hörsaal 6 · Mittelallee 10
-								br
-								|  Einführung: Kinder mit Diabetes in der Schule
-						tr
-							td 14:45
-							td
-								strong Schulunterstützende Maßnahmen
-								br
+								| Kursraum 6 · Mittelallee 10
+
+							if locals.guestCounts.pumpe
+								p
+									em #{guestCounts.pumpe} von 50 Plätzen belegt
+							else
+								p
+									em Noch keine Anmeldung.
+
+
+
+				div.col-sm-6.col-lg-3.session-description
+					div.panel.panel-default
+						div.panel-body
+
+							img.image(src="/images/kongress-2014-10-01-PA010625.jpg")
+							h3 Psychoemotionale Aspekte
+							p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
+							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| Michaela Heinrich · Sozialarbeiterin des Sozialpädiatrischen Zentrums
+								| Lilian Farias
+								br
+								i.fa.fa-clock-o.fa-fw
+								| &nbsp;&nbsp;
+								| 17:10 – 19:00
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
-								| Hörsaal 6 · Mittelallee 10
-						tr
-							td 15:45&nbsp;–&nbsp;16:15
-							td
-								strong PAUSE 
-								| Imbiss im Foyer Untergeschoss
-						tr
-							td 16:15
-							td
-								strong Rechtliche Aspekte
-								br
+								| Seminarraum 2 · Mittelallee 8
+								p
+								if locals.guestCounts.psycho
+									em #{guestCounts.psycho} von 30 Plätzen belegt
+								else
+									p
+										em Noch keine Anmeldung.
+
+
+
+				div.col-sm-6.col-lg-3.session-description
+					div.panel.panel-default
+						div.panel-body
+							img.image(src="/images/kongress-2014-10-01-PA010641.jpg")
+							h3 Netzwerkgründung Inklusive Schule
+							p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind: die Entwicklung von Strategien, betroffene Eltern zu unterstützen, ihren Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen. Des Weiteren die Identifizierung und Offenlegung von Problemen struktureller Natur, Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken sowie gemeinsame Fortbildungen.
+
+							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								a(href="http://www.diabetes-und-recht.de/oliver-ebert/") Rechtsanwalt Oliver Ebert
+								| Michaela Heinrich
+								br
+								i.fa.fa-clock-o.fa-fw
+								| &nbsp;&nbsp;
+								| 17:10 – 19:00
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
-								| Hörsaal 6 · Mittelallee 10
-								
-						tr
-							td 17:10&nbsp;–&nbsp;19:00
-							td
-								strong Aufteilung in Seminare
+								| Seminarraum 1 · Mittelallee 8
+							if locals.guestCounts.inklusion
+								p
+									em #{guestCounts.inklusion} von 30 Plätzen belegt
+							else
+								p
+									em Noch keine Anmeldung.
 
 
 
 
-			div.col-md-3.col-md-offset-1
-				H2 Material
-				p
-					a(href="/material") Leitfaden
-				p
-					i.fa.fa-external-link.fa-fw 
-					a(href="http://www.diabetes-kinder.de/") diabetes-kinder.de
 
 
 
+	.container
 
-			div.col-md-12
-				div.jumbotron
-
-					i.fa.fa-pencil-square-o.fa-5x.pull-left
-
-					h2 Anmeldung
+		h2#anmeldung Anmelden
+		p Die Anmeldung erfolgt ausschließlich hier auf 
+			em diabetes-schule-berlin.de
+			| . Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
+		br
+		form(action="seminare", method="post")
+			div.row
+				div.col-sm-4
 					p
-						| Um Anmeldung wird gebeten auf der 
-						a(href="/seminare") Übersicht der Seminare
-						|.
+						input.form-control(name="name", placeholder="Name")
+				div.col-sm-4
+					p
+						input.form-control(name="email", type="email", placeholder="E-Mail Adresse")
+				div.col-sm-4
+					p
+						input.form-control(name="school", placeholder="Schule")
+			div.row
+				div.col-sm-8
+					p
+						select.form-control(name="session")
+							option(value="basis") Basis-Schulung
+							option(value="pumpe") Insulinpumpe für Anfänger
+							option(value="psycho") Psychoemotionale Aspekte
+							option(value="inklusion") Inklusion
+							option(value="keinSeminar") kein Seminar
+							option(selected="selected", disabled="disabled", hidden="hidden") Seminar auswählen
+				div.col-sm-4
+					p
+						input.form-control.btn.btn-primary(type="submit", value="anmelden")
+		br
+		br
 
 
 
-			div.col-md-5.col-md-offset-1
+	div.container
+		br
+		br
+		div.row
+			div.col-md-4
 				p Seit fünf Jahren bietet das 
 					strong Diabeteszentrum der Charité Campus Virchow 
 					| jedes Jahr im Herbst einen
 					strong Informationsnachmittag für Lehrer, Erzieher und Schulhelfer 
 					| zum Thema: Kinder mit Diabetes in der Schule an. Die wachsende Teilnehmerzahl, zuletzt rund 200 Lehrer, Erzieher und Schulhelfer, belegt den bestehenden Bedarf.
 				p In diesem Jahr wird die Veranstaltung in Kooperation des Diabeteszentrums für Kinder und Jugendliche der Charité Campus Virchow mit Diabetes DE der Dachorganisation, die Menschen mit Diabetes und Ärzte sowie Berater vereint, durchgeführt.
-
-			div.col-md-5
+			div.col-md-4
 				p Neben einer allgemeinen Einführung zu Kindern mit Diabetes in der Schule werden 
 					strong sozialrechtliche Aspekte wie die Beantragung von Schulhelfern, Integrationsstatus und die Verordnung von Pflegediensten 
 					| besprochen. Gefolgt von rechtlichen Aspekten wie 
 					strong Stand der rechtlichen Grundlagen und Haftung von Lehrern und Erziehern 
 					| in Bezug auf die Betreuung von Kindern mit Diabetes mellitus Typ1 
 					| erörtert.
+			div.col-md-4
 				p In den anschließenden 
 					strong Seminaren 
 					| können Sie ihr Wissen in einem Gebiet vertiefen. Bitte melden Sie sich nur für ein Seminar an, die Seminare finden parallel statt. Wenn sie die Grundlagen erlernen möchten, empfehlen wir Ihnen unbedingt die Basis-Schulung.
 
+			div.clearfix
+		br
+		br
+		br
 
+	div.container
+		div.row
+			div.col-sm-6.col-md-8
+				img.image.hidden-xs.hidden-lg.hidden-md(src="/images/karte.png")
+				img.image.hidden-sm(src="/images/karte-quer.png")
+			div.col-sm-6.col-md-4
+				h2 Kontakt
+				p Charité Campus Virchow
+					br
+					| Diabeteszentrum für Kinder und Jugendliche
+					br
+					| Karina Boss
+					br
+					| Augustenburger Platz 1
+					br
+					| 13353 Berlin
+					br
+					| Tel. 030/450566357
+					br
+					| Karina.Boss@charite.de
+			div.col-sm-6.col-md-4
+				h2 Anfahrt
+				p Campus Virchow Klinikum 
+					br
+					|  Mittelallee 10 
+					small 
+						a(href="https://maps.google.com/?q=52.5422183,13.3439445", target="_blank") Google Maps
 
-			div.col-md-12
-				div.karte
-					div.row
-						div.col-sm-5.col-md-4
-							h2 Kontakt
-							p Charité Campus Virchow
-								br
-								| Diabeteszentrum für Kinder und Jugendliche
-								br
-								| Karina Boss
-								br
-								| Augustenburger Platz 1
-								br
-								| 13353 Berlin
-								br
-								| Tel. 030/450566357
-								br
-								| Karina.Boss@charite.de
-						div.col-sm-4.col-sm-offset-3.col-md-3.col-md-offset-5
-							h2 Anfahrt
-							p Campus Virchow Klinikum 
-								br
-								|  Mittelallee 10 
-								small 
-									a(href="https://maps.google.com/?q=52.5422183,13.3439445", target="_blank") Google Maps
-
-							p
-								i.fa.fa-subway.fa-fw
-								|  U Amrumer Straße
-								br
-								i.fa.fa-train.fa-fw
-								|  S Westhafen 
-								br
-								i.fa.fa-bus.fa-fw
-								|  50, M13, 106
+				p
+					i.fa.fa-subway.fa-fw
+					|  U Amrumer Straße
+					br
+					i.fa.fa-train.fa-fw
+					|  S Westhafen 
+					br
+					i.fa.fa-bus.fa-fw
+					|  50, M13, 106
 

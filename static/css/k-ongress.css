@@ -4,6 +4,11 @@
 	height: auto;
 }
 
+h2 {
+	margin-top: 50px;
+	font-size: 40px;
+}
+
 p { 
 	-moz-hyphens: auto;
 	-o-hyphens: auto;
@@ -32,29 +37,124 @@ p {
 	margin-bottom: 0.4em;
 }
 
+/* #### Speaker #### */
+.panel-speaker {
+	border-color: #ddd;
+	margin-bottom: 30px;
+}
+.panel-speaker .panel-body {
+	padding: 0 0 15px 0;
+}
+.panel-speaker .panel-body img {
+	margin-bottom: 5px;
+}
+.panel-speaker .panel-body p {
+	padding: 5px 15px 0 15px;
+	margin: 0;
+}
+.panel-speaker .panel-body p.lead {
+}
+
+
+/* #### Timetable #### */
+
+.timetable {
+
+}
+.timetable {
+	position: relative;
+}
+.timetable .line1 {
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 1px;
+	background-color: black;
+}
+.timetable .line2 {
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: white;
+}
+@media(max-width:767px) {
+	.timetable .timetable-time {
+		padding-left: 60px;
+	}
+	.timetable .timetable-content {
+		padding-left: 60px;
+	}
+	.timetable .line1 { left: 30px; }
+	.timetable .line2 { left: 20px; }
+}
+@media(min-width:768px) {
+	.timetable .line1 { left: 160px; }
+	.timetable .line2 { left: 150px; }
+.timetable .timetable-time p { text-align: right; }
+
+}
+@media(min-width:992px) {
+	.timetable .line1 { left: 205px; }
+	.timetable .line2 { left: 195px; }
+}
+@media(min-width:1200px) {
+	.timetable .line1 { left: 250px; }
+	.timetable .line2 { left: 240px; }
+}
+
+.timetable .timetable-time p {
+	margin-bottom: 3px;
+}
+
+.timetable .timetable-content {
+	margin-bottom: 30px;
+}
+.timetable .timetable-content h4 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.timetable .timetable-content .timetable-description {
+}
+
 
 
 /* #### Sessions #### */
-.session-description {
-	margin-bottom: 70px;
+.seminare-wrapper {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #2780E3;
+	color: white;
 }
-.session-description h2 {
-	min-height: 2.3em;
+
+.session-description {
+	color: black;
+	margin-bottom: 30px;
+}
+.session-description h3 {
+	padding: 5px 15px;
+	font-size: 19px;
+	font-weight: 700;
+	margin: 0;
+}
+.session-description .panel-body {
+	padding: 0;
 }
 .session-description img {
 	margin-bottom: 7px;
 }
+.session-description p {
+	padding: 5px 15px;
+}
 
 
-.karte {
-	padding: 30px;
-	background-image: url(../images/karte.png);
-	background-position: 50% 50%;
-}
-.karte h2, .karte p {
-	background-color: white;
-	padding: 10px;
-}
+
+
 
 
 footer {

@@ -48,9 +48,7 @@ app.use(express.static('static'));
 app.set('view engine', 'jade');
 app.locals.pretty = true;
 
-app.get('/', function (req, res) {
-		res.render('index', {  });
-});
+
 
 
 
@@ -62,11 +60,11 @@ function sessionsRender(res, error, newname) {
 			guestCounts[session.session] = session.guests;
 		});
 
-		res.render('seminare', { guestCounts: guestCounts, error:error, newname: newname });
+		res.render('index', { guestCounts: guestCounts, error:error, newname: newname });
 	});
 }
 
-app.get('/seminare', function (req, res) {
+app.get('/', function (req, res) {
 	sessionsRender(res);
 });
 
