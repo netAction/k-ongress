@@ -1,7 +1,53 @@
+/* https://github.com/RedHatBrand/RedHat-Overpass-Fonts */
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('/fonts/overpass_bold-webfont.eot');
+	src: url('/fonts/overpass_bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/overpass_bold-webfont.woff') format('woff'),
+		 url('/fonts/overpass_bold-webfont.ttf') format('truetype'),
+		 url('/fonts/overpass_bold-webfont.svg#overpassbold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('/fonts/overpass_light-webfont.eot');
+	src: url('/fonts/overpass_light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/overpass_light-webfont.woff') format('woff'),
+		 url('/fonts/overpass_light-webfont.ttf') format('truetype'),
+		 url('/fonts/overpass_light-webfont.svg#overpasslight') format('svg');
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('/fonts/overpass_regular-webfont.eot');
+	src: url('/fonts/overpass_regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/overpass_regular-webfont.woff') format('woff'),
+		 url('/fonts/overpass_regular-webfont.ttf') format('truetype'),
+		 url('/fonts/overpass_regular-webfont.svg#overpassregular') format('svg');
+	font-weight: 600;
+	font-style: normal;
+
+}
+
+body {
+	font-family: Overpass;
+}
+
 .image {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: Overpass;
 }
 
 h2 {
@@ -30,12 +76,12 @@ p {
 .frontblock .strip {
 	background-color: white;
 	display: inline-block;
-	padding: 0.1em 0.2em;
+	padding: 0.15em 0.3em 0 0.3em;
 	margin-bottom: 0.1em;
 }
 .frontblock h1 {
 	background-color: white;
-	padding: 0.1em 0.2em;
+	padding: 0.15em 0 0 0.2em;
 	margin-bottom: 0.4em;
 	font-size: 58px;
 	font-weight: 200;
