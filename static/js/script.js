@@ -1,3 +1,4 @@
+// Coundown
 $(function() {
 	var unixtime = new Date().getTime();
 	var unixtime = Math.floor(unixtime / 1000);
@@ -7,8 +8,8 @@ $(function() {
 });
 
 
+// Smooth scroll
 $(function() {
-
 	$('a[href*=#]').click(function() {
 		var href =  $.attr(this, 'href');
 		$('html, body').animate({

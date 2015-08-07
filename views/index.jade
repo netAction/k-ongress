@@ -339,7 +339,27 @@ block content
 		p Ein Text, der erklärt, wie das funktioniert und warum. Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
 		br
 
-		if error=='duplicate entry'
+		if error=='name missing'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es muss ein Name eingegeben werden.
+
+		else if error=='email missing'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es muss eine E-Mail Adresse eingegeben werden.
+
+		else if error=='school missing'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es muss eine Schule eingegeben werden.
+
+		else if error=='session missing'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es muss ein Seminar oder „kein Seminar“ ausgewählt werden.
+
+		else if error=='duplicate entry'
 			div.alert.alert-dismissible.alert-danger
 				button.close(type="button", data-dismiss="alert") x
 				| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
@@ -372,21 +392,21 @@ block content
 				| Wir haben dir eine Bestätigung per E-Mail geschickt.
 
 
-		form(action="/#anmeldung", method="post")
+		form(action="/#anmeldung" method="post" data-toggle="validator")#anmeldungsformular
 			div.row
 				div.col-sm-4
 					p
-						input.form-control(name="name", placeholder="Name")
+						input.form-control(name="name" placeholder="Name" required="required")
 				div.col-sm-4
 					p
-						input.form-control(name="email", type="email", placeholder="E-Mail Adresse")
+						input.form-control(name="email" type="email" placeholder="E-Mail Adresse" required="required")
 				div.col-sm-4
 					p
-						input.form-control(name="school", placeholder="Schule")
+						input.form-control(name="school" placeholder="Schule" required="required")
 			div.row
 				div.col-sm-8
 					p
-						select.form-control(name="session")
+						select.form-control(name="session" required="required")
 							option(value="basis") Basis-Schulung
 							option(value="pumpe") Insulinpumpe für Anfänger
 							option(value="psycho") Psychoemotionale Aspekte

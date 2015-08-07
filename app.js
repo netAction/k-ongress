@@ -69,6 +69,20 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
+	if(!req.body.name) {
+		error = "name missing"; sessionsRender(res, error, newName); return;
+	}
+	if(!req.body.email) {
+		error = "email missing"; sessionsRender(res, error, newName); return;
+	}
+	if(!req.body.school) {
+		error = "school missing"; sessionsRender(res, error, newName); return;
+	}
+	if(!req.body.session) {
+		error = "session missing"; sessionsRender(res, error, newName); return;
+	}
+
+
 	var registration =  {
 		name: req.body.name.trim(),
 		email: req.body.email.trim(),
