@@ -18,38 +18,68 @@ p {
 }
 
 
-.frontpage-jumbotron {
-	padding-top: 250px;
-	padding-bottom: 50px;
+.frontblock {
+	margin: 30px 0 30px 0;
+	padding: 250px 0 50px 0;
 	background-image: url(/images/Christiaan_Triebert.jpg); /* https://www.flickr.com/photos/christiaantriebert/9024165415 */
-	background-position: center;
+	background-position: 50% 20%;
 	background-size: cover;
+	font-size: 23px;
+	font-weight: 200;
 }
-.frontpage-jumbotron .strip {
+.frontblock .strip {
 	background-color: rgba(255, 255, 255, 0.8);
 	display: inline-block;
 	padding: 0.1em 0.2em;
 	margin-bottom: 0.1em;
 }
-.frontpage-jumbotron h1 {
+.frontblock h1 {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0.1em 0.2em;
 	margin-bottom: 0.4em;
+	font-size: 58px;
+	font-weight: 200;
+}
+@media(max-width:767px) {
+	.frontblock h1 {
+		font-size: 40px;
+	}
+}
+@media(min-width:992px) {
+	.frontblock h1 {
+		font-size: 67px;
+	}
 }
 
 /* #### Speaker #### */
-.panel-speaker {
-	border-color: #ddd;
+.speaker {
+	Xborder: 1px solid #2780E3;
 	margin-bottom: 30px;
+	margin-top: 15px;
+	Xbackground-color: #fcfcfc;
 }
-.panel-speaker .panel-body {
-	padding: 0 0 15px 0;
+.speaker:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
-.panel-speaker .panel-body img {
-	margin-bottom: 5px;
+.speaker img {
+	float: left;
+	width: 50%;
 }
-.panel-speaker .panel-body p {
-	padding: 5px 15px 0 15px;
+.speaker-text {
+	width: 50%;
+	margin-top: 15px;
+	float: left;
+	margin-left: -15px;
+	background-color: white;
+	padding: 5px 15px 10px 15px;
+}
+.speaker p {
+	padding: 5px 0 0 0;
 	margin: 0;
 }
 .panel-speaker .panel-body p.lead {
@@ -58,9 +88,10 @@ p {
 
 /* #### Timetable #### */
 
-.timetable {
-
+.timetable-wrapper {
+	margin-top: 30px;
 }
+
 .timetable {
 	position: relative;
 }
@@ -68,17 +99,17 @@ p {
 	position: absolute;
 	top:0;
 	height: 100%;
-	width: 1px;
-	background-color: black;
+	width: 2px;
+	background-color: #2780E3;
 }
 .timetable .line2 {
 	position: absolute;
 	top: 0;
-	width: 20px;
-	height: 20px;
-	border: 1px solid black;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #2780E3;
 	border-radius: 50%;
-	background-color: white;
+	background-color: #2780E3;
 }
 @media(max-width:767px) {
 	.timetable .timetable-time {
@@ -91,18 +122,18 @@ p {
 	.timetable .line2 { left: 20px; }
 }
 @media(min-width:768px) {
-	.timetable .line1 { left: 160px; }
-	.timetable .line2 { left: 150px; }
+	.timetable .line1 { left: 155px; }
+	.timetable .line2 { left: 145px; }
 .timetable .timetable-time p { text-align: right; }
 
 }
 @media(min-width:992px) {
-	.timetable .line1 { left: 205px; }
-	.timetable .line2 { left: 195px; }
+	.timetable .line1 { left: 175px; }
+	.timetable .line2 { left: 165px; }
 }
 @media(min-width:1200px) {
-	.timetable .line1 { left: 250px; }
-	.timetable .line2 { left: 240px; }
+	.timetable .line1 { left: 205px; }
+	.timetable .line2 { left: 195px; }
 }
 
 .timetable .timetable-time p {
@@ -114,7 +145,8 @@ p {
 }
 .timetable .timetable-content h4 {
 	margin-top: 0;
-	font-size: 20px;
+	font-size: 24px;
+	line-height: 20px;
 }
 
 .timetable .timetable-content .timetable-description {
@@ -126,7 +158,6 @@ p {
 .seminare-wrapper {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-top: 30px;
 	margin-bottom: 30px;
 	background-color: #2780E3;
 	color: white;
@@ -139,7 +170,7 @@ p {
 .session-description h3 {
 	padding: 5px 15px;
 	font-size: 19px;
-	font-weight: 700;
+	font-weight: 500;
 	margin: 0;
 }
 .session-description .panel-body {
@@ -150,6 +181,7 @@ p {
 }
 .session-description p {
 	padding: 5px 15px;
+	font-weight: 200;
 }
 
 
