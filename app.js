@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 	sessionsRender(res);
 });
 
-app.post('/seminare', function (req, res) {
+app.post('/', function (req, res) {
 	var registration =  {
 		name: req.body.name.trim(),
 		email: req.body.email.trim(),
@@ -115,7 +115,7 @@ app.post('/seminare', function (req, res) {
 
 
 
-}); // POST seminare
+}); // POST
 
 
 

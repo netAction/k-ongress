@@ -23,7 +23,7 @@ block content
 
 	div.container
 		div.row
-			div.col-sm-9.col-md-8.col-md-offset-1.col-lg-9
+			div.col-sm-9.col-md-7.col-md-offset-1.col-lg-8
 				p.lead Ein Nachmittag für Gespräche über Diabetes im Schulalltag, den Umgang mit Insulinpumpen und Snacks. 
 					| Die Konferenz ist am 
 					strong 8. Oktober 2015 
@@ -44,14 +44,16 @@ block content
 
 			div.col-sm-6.col-md-5.col-md-offset-1
 				div.speaker
-					img(src="/images/portrait-k.jpg").image
+					img(src="/images/portrait-k.jpg").speaker-image
+					img(src="/images/portrait-k-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead Karina Boss
 						p Diabetesberaterin
 
 			div.col-sm-6.col-md-5
 				div.speaker
-					img(src="/images/portrait-michaela-heinrich.jpg").image
+					img(src="/images/portrait-michaela-heinrich.jpg").speaker-image
+					img(src="/images/portrait-michaela-heinrich-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead Michaela Heinrich
 						p Sozialarbeiterin
@@ -60,14 +62,16 @@ block content
 
 			div.col-sm-6.col-md-5.col-md-offset-1
 				div.speaker
-					img(src="/images/portrait-klemens-raille.jpg").image
+					img(src="/images/portrait-klemens-raille.jpg").speaker-image
+					img(src="/images/portrait-klemens-raille-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead PD Dr. med. Klemens Raile
 						p Leiter Sozialpädiatrisches Zentrum
 
 			div.col-sm-6.col-md-5
 				div.speaker
-					img(src="/images/portrait-lilian-farias.jpg").image
+					img(src="/images/portrait-lilian-farias.jpg").speaker-image
+					img(src="/images/portrait-lilian-farias-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead Lilian Farias
 						p Psychologin
@@ -76,14 +80,16 @@ block content
 
 			div.col-sm-6.col-md-5.col-md-offset-1
 				div.speaker
-					img(src="/images/portrait-kathrin-griffig.jpg").image
+					img(src="/images/portrait-kathrin-griffig.jpg").speaker-image
+					img(src="/images/portrait-kathrin-griffig-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead Dr. Kathrin Griffig
 						p Kinderdiabetologin
 
 			div.col-sm-6.col-md-5
 				div.speaker
-					img(src="/images/portrait-oliver-ebert.jpg").image
+					img(src="/images/portrait-oliver-ebert.jpg").speaker-image
+					img(src="/images/portrait-oliver-ebert-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
 						p.lead Oliver Ebert
 						p Rechtsanwalt
@@ -192,44 +198,13 @@ block content
 			br
 			br
 
-			if error=='duplicate entry'
-				div.alert.alert-dismissible.alert-danger
-					button.close(type="button", data-dismiss="alert") x
-					| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
-
-			else if error=='database error'
-				div.alert.alert-dismissible.alert-danger
-					button.close(type="button", data-dismiss="alert") x
-					| Datenbank-Fehler! Ups!
-
-			else if error=='name invalid'
-				div.alert.alert-dismissible.alert-danger
-					button.close(type="button", data-dismiss="alert") x
-					| Mit dem eingegebenen Namen stimmt etwas nicht.
-
-			else if error=='email invalid'
-				div.alert.alert-dismissible.alert-danger
-					button.close(type="button", data-dismiss="alert") x
-					| Mit der eingegebenen Mailadresse stimmt etwas nicht.
-
-			else if error=='school invalid'
-				div.alert.alert-dismissible.alert-danger
-					button.close(type="button", data-dismiss="alert") x
-					| Mit der eingegebenen Schule stimmt etwas nicht.
-
-			else if newname
-				div.alert.alert-dismissible.alert-success
-					button.close(type="button", data-dismiss="alert") x
-					strong Hallo #{newname}!<br>
-					| Danke für deine Anmeldung.&nbsp;
-					| Wir haben dir eine Bestätigung per E-Mail geschickt.
-
 
 			div.row
 				div.col-sm-6.col-lg-3.session-description
 					div.panel.panel-default
 						div.panel-body
 							img.image(src="/images/kongress-2015-07-19-P7190768.jpg")
+							img.image-monochrome(src="/images/kongress-2015-07-19-P7190768-monochrome.jpg")
 							h3 Basis-Schulung
 
 							p Einführung in das Thema Typ 1 Diabetes. Grundlagen wie Blutzucker messen, Kohlenhydrate erkennen und Broteinheiten berechnen, Unter- und Überzuckerungen erkennen und behandeln, Therapieempfehlungen bei Sport und Schwimmen, Verhalten  bei Ausflügen und Klassenfahrten werden hier besprochen.
@@ -257,6 +232,7 @@ block content
 					div.panel.panel-default
 						div.panel-body
 							img.image(src="/images/kongress-2015-07-19-P7190765.jpg")
+							img.image-monochrome(src="/images/kongress-2015-07-19-P7190765-monochrome.jpg")
 							h3 Insulinpumpentechnik
 
 							p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen. In diesen Kleingruppen wird mit folgenden Insulinpumpen geübt: 
@@ -297,6 +273,7 @@ block content
 						div.panel-body
 
 							img.image(src="/images/kongress-2014-10-01-PA010625.jpg")
+							img.image-monochrome(src="/images/kongress-2014-10-01-PA010625-monochrome.jpg")
 							h3 Psychoemotionale Aspekte
 							p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
 							p
@@ -324,6 +301,7 @@ block content
 					div.panel.panel-default
 						div.panel-body
 							img.image(src="/images/kongress-2014-10-01-PA010641.jpg")
+							img.image-monochrome(src="/images/kongress-2014-10-01-PA010641-monochrome.jpg")
 							h3 Netzwerkgründung Inklusive Schule
 							p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind: die Entwicklung von Strategien, betroffene Eltern zu unterstützen, ihren Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen. Des Weiteren die Identifizierung und Offenlegung von Problemen struktureller Natur, Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken sowie gemeinsame Fortbildungen.
 
@@ -358,11 +336,43 @@ block content
 	.container
 
 		h2#anmeldung Anmelden
-		p Die Anmeldung erfolgt ausschließlich hier auf 
-			em diabetes-schule-berlin.de
-			| . Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
+		p Ein Text, der erklärt, wie das funktioniert und warum. Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
 		br
-		form(action="seminare", method="post")
+
+		if error=='duplicate entry'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
+
+		else if error=='database error'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Datenbank-Fehler! Ups!
+
+		else if error=='name invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit dem eingegebenen Namen stimmt etwas nicht.
+
+		else if error=='email invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit der eingegebenen Mailadresse stimmt etwas nicht.
+
+		else if error=='school invalid'
+			div.alert.alert-dismissible.alert-danger
+				button.close(type="button", data-dismiss="alert") x
+				| Mit der eingegebenen Schule stimmt etwas nicht.
+
+		else if newname
+			div.alert.alert-dismissible.alert-success
+				button.close(type="button", data-dismiss="alert") x
+				strong Hallo #{newname}!<br>
+				| Danke für deine Anmeldung.&nbsp;
+				| Wir haben dir eine Bestätigung per E-Mail geschickt.
+
+
+		form(action="/#anmeldung", method="post")
 			div.row
 				div.col-sm-4
 					p
@@ -419,11 +429,13 @@ block content
 		br
 		br
 
-	div.container
+
+	div.container.map
 		div.row
 			div.col-sm-6.col-md-8
-				img.image.hidden-xs.hidden-lg.hidden-md(src="/images/karte.png")
-				img.image.hidden-sm(src="/images/karte-quer.png")
+				img.image.hidden-sm.hidden-md(src="/images/karte-lg.png")
+				img.image.hidden-xs.hidden-md.hidden-lg(src="/images/karte-sm.png")
+				img.image.hidden-xs.hidden-sm.hidden-lg(src="/images/karte-md.png")
 			div.col-sm-6.col-md-4
 				h2 Kontakt
 				p Charité Campus Virchow
