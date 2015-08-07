@@ -410,12 +410,12 @@ block content
 				div.col-sm-8
 					p
 						select.form-control(name="session" required="required")
+							option(selected="selected", disabled="disabled", hidden="hidden", value="") Seminar auswählen
 							option(value="basis") Basis-Schulung
 							option(value="pumpe") Insulinpumpe für Anfänger
 							option(value="psycho") Psychoemotionale Aspekte
 							option(value="inklusion") Inklusion
 							option(value="keinSeminar") kein Seminar
-							option(selected="selected", disabled="disabled", hidden="hidden", value="") Seminar auswählen
 				div.col-sm-4
 					p
 						input.form-control.btn.btn-primary(type="submit", value="anmelden")
