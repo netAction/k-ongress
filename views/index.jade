@@ -220,6 +220,7 @@ block content
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
+
 							if locals.guestCounts.basis
 								p
 									em #{guestCounts.basis} von 200 Plätzen belegt
@@ -288,13 +289,13 @@ block content
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Seminarraum 2 · Mittelallee 8
+
+							if locals.guestCounts.psycho
 								p
-								if locals.guestCounts.psycho
-									p
-										em #{guestCounts.psycho} von 30 Plätzen belegt
-								else
-									p
-										em Noch keine Anmeldung.
+									em #{guestCounts.psycho} von 30 Plätzen belegt
+							else
+								p
+									em Noch keine Anmeldung.
 
 
 
@@ -318,6 +319,7 @@ block content
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Seminarraum 1 · Mittelallee 8
+
 							if locals.guestCounts.inklusion
 								p
 									em #{guestCounts.inklusion} von 30 Plätzen belegt
