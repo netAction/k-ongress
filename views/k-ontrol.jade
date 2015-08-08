@@ -10,78 +10,108 @@ block content
 		h1 K-ontrol &nbsp;
 			strong Anmeldungen
 
-
-		div.row
-			div.col-sm-6.session-description
-				h2 Basis-Schulung
-				table.table.table-striped
-					thead
+		br
+		br
+		h2 Basis-Schulung
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					if guest.session=='basis'
 						tr
-							th Name
-							th E-Mail
-							th Schule
-					tbody
-						each guest, index in registrations
-							tr
-								if guest.session=='basis'
-									td #{index+1}
-									td #{guest.name}
-									td
-										a(href="mailto:#{guest.email}") #{guest.email}
-									td #{guest.school}
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
 
 
 
-			div.col-sm-6.session-description
-				h2 Insulinpumpe für Anfänger
-				table.table.table-striped
-					thead
+		br
+		br
+		h2 Insulinpumpe
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					if guest.session=='pumpe'
 						tr
-							th
-							th Name
-							th E-Mail
-							th Schule
-					tbody
-						each guest, index in registrations
-							tr
-								if guest.session=='pumpe'
-									td #{index+1}
-									td #{guest.name}
-									td
-										a(href="mailto:#{guest.email}") #{guest.email}
-									td #{guest.school}
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
 
-			div.col-sm-6.session-description
-				h2 Psychoemotionale Aspekte
-				table.table.table-striped
-					thead
-						tr
-							th Name
-							th E-Mail
-							th Schule
-					tbody
-						each guest in registrations
-							tr
-								if guest.session=='psycho'
-									td #{guest.name}
-									td
-										a(href="mailto:#{guest.email}") #{guest.email}
-									td #{guest.school}
 
-			div.col-sm-6.session-description
-				h2 Inklusion
-				table.table.table-striped
-					thead
-						tr
-							th Name
-							th E-Mail
-							th Schule
-					tbody
-						each guest in registrations
-							tr
-								if guest.session=='inklusion'
-									td #{guest.name}
-									td
-										a(href="mailto:#{guest.email}") #{guest.email}
-									td #{guest.school}
+		br
+		br
+		h2 Psychoemotionale Aspekte
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					tr
+						if guest.session=='psycho'
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
 
+
+
+		br
+		br
+		h2 Inklusion
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					tr
+						if guest.session=='inklusion'
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
+
+
+		br
+		br
+		h2 kein Seminar
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					tr
+						if guest.session=='keinSeminar'
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
