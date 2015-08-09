@@ -337,88 +337,86 @@ block content
 
 
 	.container
+		if newname
+			div.thankyou#anmeldung
+				h1.text-center Danke für deine Anmeldung!
+				h2.text-center Herzlich willkommen #{newname}. Wir haben dir eine Bestätigung per E-Mail geschickt.
 
-		h2#anmeldung Anmelden
-		p Ein Text, der erklärt, wie das funktioniert und warum. Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
-		br
+		else
+			h2#anmeldung Anmelden
+			p Ein Text, der erklärt, wie das funktioniert und warum. Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
+			br
 
-		if error=='name missing'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Es muss ein Name eingegeben werden.
+			if error=='name missing'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es muss ein Name eingegeben werden.
 
-		else if error=='email missing'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Es muss eine E-Mail Adresse eingegeben werden.
+			else if error=='email missing'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es muss eine E-Mail Adresse eingegeben werden.
 
-		else if error=='school missing'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Es muss eine Schule eingegeben werden.
+			else if error=='school missing'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es muss eine Schule eingegeben werden.
 
-		else if error=='session missing'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Es muss ein Seminar oder „kein Seminar“ ausgewählt werden.
+			else if error=='session missing'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es muss ein Seminar oder „kein Seminar“ ausgewählt werden.
 
-		else if error=='duplicate entry'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
+			else if error=='duplicate entry'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Es gibt schon eine Anmeldung mit der gleichen E-Mail Adresse!
 
-		else if error=='database error'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Datenbank-Fehler! Ups!
+			else if error=='database error'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Datenbank-Fehler! Ups!
 
-		else if error=='name invalid'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Mit dem eingegebenen Namen stimmt etwas nicht.
+			else if error=='name invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit dem eingegebenen Namen stimmt etwas nicht.
 
-		else if error=='email invalid'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Mit der eingegebenen Mailadresse stimmt etwas nicht.
+			else if error=='email invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit der eingegebenen Mailadresse stimmt etwas nicht.
 
-		else if error=='school invalid'
-			div.alert.alert-dismissible.alert-danger
-				button.close(type="button", data-dismiss="alert") x
-				| Mit der eingegebenen Schule stimmt etwas nicht.
-
-		else if newname
-			div.alert.alert-dismissible.alert-success
-				button.close(type="button", data-dismiss="alert") x
-				strong Hallo #{newname}!<br>
-				| Danke für deine Anmeldung.&nbsp;
-				| Wir haben dir eine Bestätigung per E-Mail geschickt.
+			else if error=='school invalid'
+				div.alert.alert-dismissible.alert-danger
+					button.close(type="button", data-dismiss="alert") x
+					| Mit der eingegebenen Schule stimmt etwas nicht.
 
 
-		form(action="/#anmeldung" method="post" data-toggle="validator")#anmeldungsformular
-			div.row
-				div.col-sm-4
-					p
-						input.form-control(name="name" placeholder="Name" required="required")
-				div.col-sm-4
-					p
-						input.form-control(name="email" type="email" placeholder="E-Mail Adresse" required="required")
-				div.col-sm-4
-					p
-						input.form-control(name="school" placeholder="Schule" required="required")
-			div.row
-				div.col-sm-8
-					p
-						select.form-control(name="session" required="required")
-							option(selected="selected", disabled="disabled", hidden="hidden", value="") Seminar auswählen
-							option(value="basis") Basis-Schulung
-							option(value="pumpe") Insulinpumpe für Anfänger
-							option(value="psycho") Psychoemotionale Aspekte
-							option(value="inklusion") Inklusion
-							option(value="keinSeminar") kein Seminar
-				div.col-sm-4
-					p
-						input.form-control.btn.btn-primary(type="submit", value="anmelden")
+			form(action="/#anmeldung" method="post" data-toggle="validator")#anmeldungsformular
+				div.row
+					div.col-sm-4
+						p
+							input.form-control(name="name" placeholder="Name" required="required")
+					div.col-sm-4
+						p
+							input.form-control(name="email" type="email" placeholder="E-Mail Adresse" required="required")
+					div.col-sm-4
+						p
+							input.form-control(name="school" placeholder="Schule" required="required")
+				div.row
+					div.col-sm-8
+						p
+							select.form-control(name="session" required="required")
+								option(selected="selected", disabled="disabled", hidden="hidden", value="") Seminar auswählen
+								option(value="basis") Basis-Schulung
+								option(value="pumpe") Insulinpumpe für Anfänger
+								option(value="psycho") Psychoemotionale Aspekte
+								option(value="inklusion") Inklusion
+								option(value="keinSeminar") kein Seminar
+					div.col-sm-4
+						p
+							input.form-control.btn.btn-primary(type="submit", value="anmelden")
 		br
 		br
 
