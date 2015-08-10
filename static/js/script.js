@@ -19,3 +19,13 @@ $(function() {
 		return false;
 	});
 });
+
+
+
+// Piwik
+var _paq = [
+	['trackPageView'],
+	['enableLinkTracking'],
+	['setTrackerUrl', 'https://piwik.netaction.de/piwik.php'],
+	['setSiteId', 16]
+];
