@@ -18,7 +18,7 @@ var transporter = nodemailer.createTransport(config.nodemailerTransporter);
 function sendMail(to, subject, text) {
 	transporter.sendMail({
 		from: 'formmail@netaction.de',
-		replyTo: 'bla@netaction.de',
+		replyTo: 'karina.boss@charite.de',
 		to: to,
 		subject: subject,
 		text: text,
@@ -113,15 +113,16 @@ app.post('/', function (req, res) {
 			var newName = req.body.name.trim();
 			sendMail(
 				registration.email,
-				'Du bist beim Lehrerinnen-Erzieherinnen-Nachmittag dabei!',
+				'Sie sind beim Lehrer-Erzieher-Nachmittag dabei!',
 				'Hallo '+newName+'!\n\n'+
-				'Willkommen beim Lehrerinnen-Erzieherinnen-Nachmittag, wir freuen uns, dich am 13. Oktober 2015 zu sehen.\n'+
-				(registration.session=='basis'?'Für dich ist ein Platz bei der Basis-Schulung reserviert.':'')+
-				(registration.session=='pumpe'?'Für dich ist ein Platz beim Seminar „Insulinpumpe für Anfänger“ reserviert.':'')+
-				(registration.session=='psycho'?'Für dich ist ein Platz beim Seminar „Psychoemotionale Aspekte“ reserviert.':'')+
-				(registration.session=='inklusion'?'Für dich ist ein Platz beim Inklusions-Seminar reserviert.':'')+
-				'\n\nBei Änderungen und Rückfragen erreichst du uns unter Telefon oder per Antwort auf diese Mail.'+
-				'\n\nDein Team des Sozialpädiatrischen Zentrum');
+				'Willkommen beim Lehrer-Erzieher-Nachmittag. Wir freuen uns, Sie am 8. Oktober 2015 zu sehen.\n'+
+				(registration.session=='basis'?'Für Sie ist ein Platz in der Basis-Schulung reserviert.':'')+
+				(registration.session=='pumpe'?'Für Sie ist ein Platz im Seminar „Insulinpumpen-Therapie“ reserviert.':'')+
+				(registration.session=='psycho'?'Für Sie ist ein Platz im Seminar „Psychoemotionale Aspekte“ reserviert.':'')+
+				(registration.session=='inklusion'?'Für Sie ist ein Platz beim Netzwerk-Treffen Inklusion reserviert.':'')+
+				'\n\nBei Absagen und Rückfragen erreichen Sie uns per Antwort auf diese Mail oder karina.boss@charite.de.'+
+				'\n\nMit freundlichen Grüßen'+
+				'\nKarina Boß');
 		}
 
 		sessionsRender(res, error, newName);

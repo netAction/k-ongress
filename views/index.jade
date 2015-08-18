@@ -24,12 +24,7 @@ block content
 	div.container
 		div.row
 			div.col-sm-9.col-md-7.col-md-offset-1.col-lg-8
-				p.lead Ein Nachmittag für Gespräche über Diabetes im Schulalltag, den Umgang mit Insulinpumpen und Snacks. 
-					| Die Konferenz ist am 
-					strong 8. Oktober 2015 
-					| im 
-					strong Campus Virchow der Charité Berlin
-					| .
+				p.lead Das Diabeteszentrum für Kinder und Jugendliche der Charité und diabetesDe bieten an diesem Nachmittag eine kostenfreie Informationsveranstaltung für Lehrerinnen, Erzieherinnen und Schulhelferinnen an, um sich im Umgang mit Kindern mit Diabetes mellitus Typ 1 fortzubilden. Neben den Grundlagen können sie an durch Experten geleitete Seminare zur Vertiefung ihres Wissens teilnehmen.
 
 			div.col-sm-3.col-lg-2
 				a.btn.btn-primary.btn-lg.pull-right(href="#anmeldung") Anmeldung
@@ -112,11 +107,13 @@ block content
 							div.timetable-description
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
+								a(href="http://spz.charite.de/unser_angebot/interdisziplinaeres_spz/diabetologie/team/") Oberarzt PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
+								br
+								| Dr. Raile stellt die Arbeit des Diabeteszentrums für Kinder und Jugendliche der Charité und die aktuelle Situation von Kindern mit Diabetes in der Schule vor.
 
 					div.row.timetable
 						div.line1
@@ -134,14 +131,14 @@ block content
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
 								br
-								|  Einführung: Kinder mit Diabetes in der Schule
+								|  Frau Dr. Griffig referiert über die Grundlagen der Diabetestherapie und deren Bedeutung im Schulalltag, sowie über die Vermeidung von Gefahrensituationen.
 
 
 					div.row.timetable
 						div.line1
 						div.line2
 						div.col-sm-2.col-md-2.timetable-time
-							p 14:45
+							p 14:35
 						div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
 							h4 Schulunterstützende Maßnahmen 
 							div.timetable-description
@@ -152,17 +149,19 @@ block content
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
+								br
+								| Frau Heinrich erörtert die Möglichkeiten von schulunterstützenden Maßnahmen für Kinder mit Typ 1 Diabetes in Berlin und Brandenburg und erklärt die Wege zur Beantragung und deren Schwierigkeiten.
 
 
 					div.row.timetable
 						div.line1
 						div.line2
 						div.col-sm-2.col-md-2.timetable-time
-							p 15:25
+							p 15:30
 						div.col-sm-9.col-sm-offset-1.col-md-9.col-md-offset-1.timetable-content
 							h4 PAUSE 
 							div.timetable-description
-								p Imbiss im Foyer Untergeschoss
+								p Imbiss im Foyer (Untergeschoss)
 
 
 					div.row.timetable
@@ -280,7 +279,7 @@ block content
 							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| Lilian Farias und Turan Yıldız
+								| Lilian Farias und Turan Yildiz
 								br
 								i.fa.fa-clock-o.fa-fw
 								| &nbsp;&nbsp;
@@ -306,10 +305,9 @@ block content
 							img.image-monochrome(src="/images/kongress-2014-10-01-PA010641-monochrome.jpg")
 							h3 Netzwerkgründung Inklusive Schule
 							p Wir laden Sie herzlich zur Gründung dieses Netzwerkes ein. Ziele dieses Netzwerkes sind:
-							ul
-								li Entwicklung von Strategien, Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen
-								li Identifizierung und Offenlegung von Problemen struktureller Natur
-								li Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken etc.
+							p Entwicklung von Strategien, Kindern mit chronischer Erkrankung das Recht auf Bildung zu ermöglichen; 
+								| Identifizierung und Offenlegung von Problemen struktureller Natur; 
+								| Kontinuierliche Förderung und Kommunikation von erfolgreichen Strukturen sowie systematische Verbesserung von Barrieren und Versorgungslücken.
 							p Wir laden Sie herzlich zur Gründung und aktiven Gestaltung dieses Netzwerkes ein.
 							p
 								i.fa.fa-user.fa-fw
@@ -343,12 +341,13 @@ block content
 	.container
 		if newname
 			div.thankyou#anmeldung
-				h1.text-center Danke für deine Anmeldung!
-				h2.text-center Herzlich willkommen #{newname}. Wir haben dir eine Bestätigung per E-Mail geschickt.
+				h1.text-center Danke für Ihre Anmeldung!
+				h2.text-center Herzlich willkommen #{newname}. Sie haben sich erfolgreich für den Lehrer-Erzieher-Nachmittag angemeldet. 
+					| In kürze erhalten Sie eine E-Mail zur Bestätigung.
 
 		else
 			h2#anmeldung Anmelden
-			p Ein Text, der erklärt, wie das funktioniert und warum. Nach der Anmeldung erhalten sie eine Bestätigungs-E-Mail.
+			p Bitte füllen Sie die Felder aus. Nach der Anmeldung bekommen Sie eine Bestätigung per E-Mail.
 			br
 
 			if error=='name missing'
@@ -433,7 +432,7 @@ block content
 			div.col-md-4
 				p Seit fünf Jahren bietet das 
 					strong Diabeteszentrum der Charité Campus Virchow 
-					| jedes Jahr im Herbst einen
+					| jedes Jahr im Herbst einen 
 					strong Informationsnachmittag für Lehrer, Erzieher und Schulhelfer 
 					| zum Thema: Kinder mit Diabetes in der Schule an. Die wachsende Teilnehmerzahl, zuletzt rund 200 Lehrer, Erzieher und Schulhelfer, belegt den bestehenden Bedarf.
 				p In diesem Jahr wird die Veranstaltung in Kooperation des Diabeteszentrums für Kinder und Jugendliche der Charité Campus Virchow mit „diabetesDE - Deutsche Diabetes-Hilfe“ der Dachorganisation, die Menschen mit Diabetes und Ärzte sowie Berater vereint, durchgeführt.
@@ -473,16 +472,18 @@ block content
 					br
 					| 13353 Berlin
 					br
-					| Tel. 030/450566357
+					| Tel. 
+					a(href="tel:+4930450566357") 030 450 566 357
 					br
-					| Karina.Boss@charite.de
+					a(href="mailto:karina.boss@charite.de") karina.boss@charite.de
 			div.col-sm-6.col-md-4
 				h2 Anfahrt
 				p Campus Virchow Klinikum 
 					br
-					|  Mittelallee 10 
-					small 
-						a(href="https://maps.google.com/?q=52.5422183,13.3439445", target="_blank") Google Maps
+					|  Mittelallee 10
+					br
+					a(href="https://maps.google.com/?q=52.5422183,13.3439445", target="_blank") Google Maps 
+						i.fa.fa-external-link
 
 				p
 					i.fa.fa-subway.fa-fw
