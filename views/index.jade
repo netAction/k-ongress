@@ -1,7 +1,10 @@
 extends layout.jade
 
 block title
-	title Diabetes-Schule Berlin
+	if newname
+		title Angemeldet
+	else
+		title Diabetes-Schule Berlin
 
 block content
 	div.container
