@@ -29,6 +29,8 @@ var _paq = [
 	['setTrackerUrl', 'https://piwik.netaction.de/piwik.php'],
 	['setSiteId', 16]
 ];
+
 if ($('#newname-name').length) {
 	_paq.push(['setCustomVariable', 1, "Name", $('#newname-name').text(), "visit" ]);
+	_paq.push(['trackGoal', 1]);
 }
