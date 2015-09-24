@@ -135,7 +135,7 @@ app.post('/', function (req, res) {
 
 
 app.get('/k-ontrol', function (req, res) {
-	mysqlPool.query('SELECT * FROM registrations', function(err, results) {
+	mysqlPool.query('SELECT * FROM registrations ORDER BY timestamp', function(err, results) {
 		if (err) throw err;
 		res.render('k-ontrol', { registrations: results });
 	});
