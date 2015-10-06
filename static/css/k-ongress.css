@@ -259,3 +259,10 @@ footer a:hover, footer a:focus, footer a:active {
 	color: white;
 	background-color: #666;
 }
+
+
+@media print {
+	a.btn, footer {
+		display: none;
+	}
+}
