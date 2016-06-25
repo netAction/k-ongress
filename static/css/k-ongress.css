@@ -19,6 +19,10 @@ p {
 }
 
 
+.form-control {
+	margin-bottom: 30px;
+}
+
 .frontblock {
 	margin: 30px 0 50px 0;
 	padding: 270px 0 30px 0;

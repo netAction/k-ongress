@@ -39,6 +39,7 @@ block content
 			thead
 				tr
 					th
+					th Pumptentyp
 					th Name
 					th E-Mail
 					th Schule
@@ -47,6 +48,7 @@ block content
 					if guest.session=='pumpe'
 						tr
 							td #{index+1}
+							td #{guest.session_detail}
 							td #{guest.name}
 							td
 								a(href="mailto:#{guest.email}") #{guest.email}
@@ -77,7 +79,7 @@ block content
 
 		br
 		br
-		h2 Inklusion
+		h2 Sozialrechtliche Aspekte
 		table.table.table-striped
 			thead
 				tr
@@ -88,7 +90,7 @@ block content
 			tbody
 				each guest, index in registrations
 					tr
-						if guest.session=='inklusion'
+						if guest.session=='sozialrechtlich'
 							td #{index+1}
 							td #{guest.name}
 							td

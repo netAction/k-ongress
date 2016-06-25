@@ -3,7 +3,9 @@ $(function() {
 	var unixtime = new Date().getTime();
 	var unixtime = Math.floor(unixtime / 1000);
 
-	var days = Math.floor((1444305600 - unixtime) / (3600*24));
+	// 2015 Datum: 1444305600 entspricht: 10/08/2015 @ 12:00pm (UTC)
+	// 2016 Datum: 1475755200 entspricht: 10/06/2016 @ 12:00pm (UTC)
+	var days = Math.floor((1475755200 - unixtime) / (3600*24));
 	$('.timer').text('in '+days+' Tagen');
 });
 
@@ -17,6 +19,22 @@ $(function() {
 		}, 500);
 		window.location.hash = href;
 		return false;
+	});
+});
+
+
+
+// Pumpe Select
+$(function() {
+	$('select[name=session]').change(function() {
+		if ($(this).val() == 'pumpe') {
+			$('.pumpenselect').slideDown();
+			$('.pumpenselect').find('select').attr('required', 'required');
+		console.log($(this).val());
+		} else {
+			$('.pumpenselect').slideUp();
+			$('.pumpenselect').find('select').removeAttr('required');
+		}
 	});
 });
 

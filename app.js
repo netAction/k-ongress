@@ -88,6 +88,7 @@ app.post('/', function (req, res) {
 		email: req.body.email.trim(),
 		school: req.body.school.trim(),
 		session: req.body.session.trim(),
+		session_detail: req.body.session_detail.trim(),
 	};
 
 	var error = false;
