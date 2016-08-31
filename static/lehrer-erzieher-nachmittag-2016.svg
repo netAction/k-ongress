@@ -313,15 +313,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7071068"
-     inkscape:cx="297.3112"
-     inkscape:cy="622.22325"
+     inkscape:zoom="0.50000001"
+     inkscape:cx="702.11721"
+     inkscape:cy="170.2194"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
-     inkscape:window-x="1345"
+     inkscape:window-x="2705"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="true"
@@ -360,7 +360,7 @@
        transform="matrix(1.25,0,0,-1.25,252.20413,691.21743)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="72.751289"
        y="94.003242"
        id="text6827"
@@ -369,19 +369,26 @@
          id="tspan6829"
          x="72.751289"
          y="94.003242"
-         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro">Lehrer-Erzieher-Nachmittag</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.5px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:start;writing-mode:lr-tb;text-anchor:start">Informationsnachmittag</tspan><tspan
+         sodipodi:role="line"
+         x="72.751289"
+         y="156.50323"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="tspan4984" /></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="72.751289"
-       y="149.12106"
+       y="143.12106"
        id="text6827-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6829-1"
          x="72.751289"
-         y="149.12106"
-         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro">Programm</tspan></text>
+         y="143.12106"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.25px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:start;writing-mode:lr-tb;text-anchor:start">für pädagogische Fachkräfte   <tspan
+   style="font-weight:bold;font-size:34.25px"
+   id="tspan4988">Programm</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro;font-stretch:normal;font-variant:normal"
@@ -487,7 +494,7 @@
          x="387.14285"
          y="481.93365"
          style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Ultra-Light';text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="tspan4471">Karina Boss</tspan><tspan
+         id="tspan4471">Romina Plätke</tspan><tspan
          sodipodi:role="line"
          x="387.14285"
          y="496.93365"
@@ -497,7 +504,7 @@
          x="387.14285"
          y="511.93365"
          style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Ultra-Light';text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="tspan4475">Kursraum 5 · Mittelallee 10</tspan><tspan
+         id="tspan4475">Seminarraum 1 · Mittelallee 8</tspan><tspan
          sodipodi:role="line"
          x="387.14285"
          y="526.93365"
