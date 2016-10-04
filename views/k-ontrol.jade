@@ -98,6 +98,31 @@ block content
 							td #{guest.school}
 
 
+
+
+		br
+		br
+		h2 BE KE Intensivtraining
+		table.table.table-striped
+			thead
+				tr
+					th
+					th Name
+					th E-Mail
+					th Schule
+			tbody
+				each guest, index in registrations
+					tr
+						if guest.session=='beintensiv'
+							td #{index+1}
+							td #{guest.name}
+							td
+								a(href="mailto:#{guest.email}") #{guest.email}
+							td #{guest.school}
+
+
+
+
 		br
 		br
 		h2 kein Seminar
