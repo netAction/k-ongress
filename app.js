@@ -119,12 +119,11 @@ app.post('/', function (req, res) {
 				registration.email,
 				'Sie sind beim Lehrer-Erzieher-Nachmittag dabei!',
 				'Hallo '+newName+'!\n\n'+
-				'Willkommen beim Lehrer-Erzieher-Nachmittag. Wir freuen uns, Sie am 6. Oktober 2016 zu sehen.\n'+
+				'Willkommen beim Lehrer-Erzieher-Nachmittag. Wir freuen uns, Sie am 12. Oktober 2017 zu sehen.\n'+
 				(registration.session=='basis'?'Für Sie ist ein Platz in der Basis-Schulung reserviert.':'')+
 				(registration.session=='pumpe'?'Für Sie ist ein Platz im Seminar „Insulinpumpen-Therapie“ reserviert.':'')+
-				(registration.session=='beintensiv'?'Für Sie ist ein Platz im Seminar „KE- und BE-Intensivtraining“ reserviert.':'')+
 				(registration.session=='psycho'?'Für Sie ist ein Platz im Seminar „Psychosoziale Aspekte“ reserviert.':'')+
-				(registration.session=='sozialrechtlich'?'Für Sie ist ein Platz im Seminar „Sozialrechtliche Aspekte“ reserviert.':'')+
+				(registration.session=='glukosesensor'?'Für Sie ist ein Platz im Seminar „Glukosesensoren“ reserviert.':'')+
 				'\n\nBei Absagen und Rückfragen erreichen Sie uns per Antwort auf diese Mail oder karina.boss@charite.de.'+
 				'\n\nMit freundlichen Grüßen'+
 				'\nKarina Boß');
@@ -157,7 +156,3 @@ var server = app.listen(8004, function () {
 	console.log('Example app listening at http://%s:%s', host, port);
 
 });
-
-
-
-
