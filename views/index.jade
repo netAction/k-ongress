@@ -19,7 +19,7 @@ block content
 					h1 Informations&shy;nachmittag für pädagogische Fachkräfte
 					p
 						span.pull-right.strip.timer.hidden-xs
-						span.strip 12. Oktober 2017
+						span.strip 3. September 2018
 						| &nbsp;&nbsp;
 						span.strip Berlin
 
@@ -63,7 +63,7 @@ block content
 					img(src="/images/portrait-klemens-raille.jpg").speaker-image
 					img(src="/images/portrait-klemens-raille-monochrome.jpg").speaker-image-monochrome
 					div.speaker-text
-						p.lead PD Dr. med. Klemens Raile
+						p.lead Prof. Dr. med. Klemens Raile
 						p Leiter des Diabeteszentrums für Kinder und Jugendliche
 
 			div.col-sm-6.col-md-5
@@ -110,13 +110,13 @@ block content
 							div.timetable-description
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| PD Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
+								| Prof. Dr. Klemens Raile · Leiter des Diabeteszentrums für Kinder und Jugendliche
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
 								| Hörsaal 6 · Mittelallee 10
 								br
-								| Dr. Raile stellt die Arbeit des Diabeteszentrums für Kinder und Jugendliche der Charité und die aktuelle Situation von Kindern mit Diabetes in der Schule vor.
+								| Prof. Raile stellt die Arbeit des Diabeteszentrums für Kinder und Jugendliche der Charité und die aktuelle Situation von Kindern mit Diabetes in der Schule vor.
 
 					div.row.timetable
 						div.line1
@@ -225,20 +225,20 @@ block content
 							h3 Insulinpumpentechnik
 
 							p Nach den Grundlagen wie der Behandlung von Unter- und Überzuckerungen, sowie BE-Berechnung werden die Bedienung der Insulinpumpe mit Bolusabgabe erklärt. Die technische Einweisung für die verschiedenen Pumpen erfolgt in Kleingruppen. In diesen Kleingruppen wird mit folgenden Insulinpumpen geübt: 
-								em Roche Accu check Combo 
-								| und 
-								em Insight
+								em Roche Accu check Insight
 								| , 
 								em Paradigm Medtronic Veo 
+								| , 
+								em 640G 
 								| sowie 
-								em 604G 
-								| und 
-								em Ypsomed Omnipod
+								em Omnipod
+                | und 
+								em Ypsopump
 								|.
 							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| Ingrid Stölzel und Romina Geißler
+								| Karina Boss
 								br
 								i.fa.fa-clock-o.fa-fw
 								| &nbsp;&nbsp;
@@ -263,7 +263,7 @@ block content
 							img.image(src="/images/kongress-2014-10-01-PA010625.jpg")
 							img.image-monochrome(src="/images/kongress-2014-10-01-PA010625-monochrome.jpg")
 							h3 Psychoemotionale Aspekte
-							p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Des Weiteren ist der Austausch unter den TeilnehmerInnen hier vordergründig.
+							p Die psychoemotionalen Aspekte der Krankheitsbewältigung im Kindesalter gehören zu den Hauptthemen in diesem Seminar. Anhand von fiktiven Fallbeispielen werden verschiedene Aspekte der Erkrankung Diabetes mellitus Typ 1 besprochen.
 							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
@@ -275,7 +275,7 @@ block content
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
-								| Seminarraum 2 · Mittelallee 8
+								| Seminarraum 1 · Mittelallee 8
 
 							if locals.guestCounts.psycho
 								p
@@ -295,7 +295,7 @@ block content
 							p
 								i.fa.fa-user.fa-fw
 								| &nbsp;&nbsp;
-								| PD Dr. Klemens Raile und Karina Boss
+								| Prof. Dr. Klemens Raile
 								br
 								i.fa.fa-clock-o.fa-fw
 								| &nbsp;&nbsp;
@@ -303,7 +303,7 @@ block content
 								br
 								i.fa.fa-map-marker.fa-fw
 								| &nbsp;&nbsp;
-								| Seminarraum 1 · Mittelallee 8
+								| Seminarraum 2 · Mittelallee 8
 
 							if locals.guestCounts.glucosesensor
 								p
@@ -313,7 +313,7 @@ block content
 									em Noch keine Anmeldung.
 
 
-			a.btn.btn-default(href="/lehrer-erzieher-nachmittag-2017.pdf")
+			a.btn.btn-default(href="/lehrer-erzieher-nachmittag-2018.pdf")
 				i.fa.fa-file-pdf-o
 				| &nbsp;&nbsp;Zeitplan als PDF
 
@@ -401,9 +401,10 @@ block content
 						p.pumpenselect(style="display:none;")
 							select.form-control(name="session_detail" autocomplete="off")
 								option(selected="selected", disabled="disabled", hidden="hidden", value="") Pumpe auswählen
+                option(value="accucheck") Accu Check Insight
 								option(value="medtronic") Medtronic Veo und 640G
-								option(value="ypsomed") Ypsomed Omnipod
-								option(value="accucheck") Accu Check Insight
+								option(value="omnipod") Omnipod
+                option(value="ypsopump") Ypsopump
 								option(value="keineahnung") Keine Ahnung
 						p
 							input.form-control.btn.btn-primary(type="submit", value="anmelden")
@@ -417,7 +418,7 @@ block content
 		br
 		div.row
 			div.col-md-4
-				p Seit sieben Jahren bietet das 
+				p Seit acht Jahren bietet das 
 					strong Diabeteszentrum der Charité Campus Virchow 
 					| jedes Jahr im Herbst einen 
 					strong Informationsnachmittag für Lehrer, Erzieher und Schulhelfer 

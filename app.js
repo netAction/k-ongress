@@ -119,7 +119,7 @@ app.post('/', function (req, res) {
 				registration.email,
 				'Sie sind beim Lehrer-Erzieher-Nachmittag dabei!',
 				'Hallo '+newName+'!\n\n'+
-				'Willkommen beim Lehrer-Erzieher-Nachmittag. Wir freuen uns, Sie am 12. Oktober 2017 zu sehen.\n'+
+				'Willkommen beim Lehrer-Erzieher-Nachmittag. Wir freuen uns, Sie am 3. September 2018 zu sehen.\n'+
 				(registration.session=='basis'?'Für Sie ist ein Platz in der Basis-Schulung reserviert.':'')+
 				(registration.session=='pumpe'?'Für Sie ist ein Platz im Seminar „Insulinpumpen-Therapie“ reserviert.':'')+
 				(registration.session=='psycho'?'Für Sie ist ein Platz im Seminar „Psychosoziale Aspekte“ reserviert.':'')+
