@@ -6,8 +6,9 @@ $(function() {
 	// 2015 Datum: 1444305600 entspricht: 10/08/2015 @ 12:00pm (UTC)
 	// 2016 Datum: 1475755200 entspricht: 10/06/2016 @ 12:00pm (UTC)
 	// 2017 Datum: 1507802400 entspricht: 10/12/2017 @ 12:00pm (UTC)
-  // 2018 Datum: 1535968800 entspricht: 03/09/2018 @ 12:00pm (UTC)
-	var days = Math.floor((1535968800 - unixtime) / (3600*24));
+	// 2018 Datum: 1535968800 entspricht: 03/09/2018 @ 12:00pm (UTC)
+	// 2019 Datum: 1567634400 entspricht: 05.09.2019 - 00:00:00
+	var days = Math.floor((1567634400 - unixtime) / (3600*24));
 	$('.timer').text('in '+days+' Tagen');
 });
 
