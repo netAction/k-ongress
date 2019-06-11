@@ -307,9 +307,9 @@ block content
 								| &nbsp;&nbsp;
 								| Seminarraum 2 · Mittelallee 8
 
-							if locals.guestCounts.glukosesensor
+							if locals.guestCounts.integration
 								p
-									em #{guestCounts.glukosesensor} von 30 Plätzen belegt
+									em #{guestCounts.integration} von 30 Plätzen belegt
 							else
 								p
 									em Noch keine Anmeldung.
@@ -397,8 +397,8 @@ block content
 								option(selected="selected", disabled="disabled", hidden="hidden", value="") Seminar auswählen
 								option(value="basis") Basis-Schulung
 								option(value="pumpe") Insulinpumpentechnik
-								option(value="psycho" disabled="disabled") Psychoemotionale Aspekte
-								option(value="glukosesensor") Konzepte und Ideen
+								option(value="psycho") Psychoemotionale Aspekte
+								option(value="integration") Konzepte und Ideen
 								option(value="keinSeminar") kein Seminar
 						p.pumpenselect(style="display:none;")
 							select.form-control(name="session_detail" autocomplete="off")

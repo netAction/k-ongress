@@ -123,7 +123,7 @@ app.post('/', function (req, res) {
 				(registration.session=='basis'?'Für Sie ist ein Platz in der Basis-Schulung reserviert.':'')+
 				(registration.session=='pumpe'?'Für Sie ist ein Platz im Seminar „Insulinpumpen-Therapie“ reserviert.':'')+
 				(registration.session=='psycho'?'Für Sie ist ein Platz im Seminar „Psychosoziale Aspekte“ reserviert.':'')+
-				(registration.session=='glukosesensor'?'Für Sie ist ein Platz im Seminar „Konzepte und Ideen“ reserviert.':'')+
+				(registration.session=='integration'?'Für Sie ist ein Platz im Seminar „Konzepte und Ideen“ reserviert.':'')+
 				'\n\nBei Absagen und Rückfragen erreichen Sie uns per Antwort auf diese Mail oder karina.boss@charite.de.'+
 				'\n\nMit freundlichen Grüßen'+
 				'\nKarina Boß');

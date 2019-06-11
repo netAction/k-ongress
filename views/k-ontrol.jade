@@ -79,7 +79,7 @@ block content
 
 		br
 		br
-		h2 Glukosesensoren
+		h2 Integration
 		table.table.table-striped
 			thead
 				tr
@@ -90,7 +90,7 @@ block content
 			tbody
 				each guest, index in registrations
 					tr
-						if guest.session=='glukosesensor'
+						if guest.session=='integration'
 							td #{index+1}
 							td #{guest.name}
 							td
